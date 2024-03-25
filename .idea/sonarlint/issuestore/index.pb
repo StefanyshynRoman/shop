@@ -41,8 +41,6 @@ A
 eureka/.gitignore,4\1\4107cfcb5e5028f7e59f6f0162f8667ac912140d
 8
 shop.iml,9\3\936868cfff4d9e575a4505de73ec781074270942
-9
-	gitignore,6\f\6f819b366cb83f2e62d7b8b23b65c2e28c01306a
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
@@ -160,20 +158,8 @@ Bshop-fe/src/app/modules/core/components/header/header.component.ts,c\9\c9ef260
 Q.idea/sonarlint/securityhotspotstore/4/4/441ad60631ac0d94005ca9c6484931be18756727,b\4\b4a38b68547a3281efc9b229e080601841484dae
 Å
 Q.idea/sonarlint/securityhotspotstore/1/6/1613fcdc75afeb5e15b1f8973b4ba76535aa2c15,b\e\be8450473a8a70fbfd29f236213f7f611a54f683
-h
-8auth/src/main/java/com/exemple/auth/AuthApplication.java,b\f\bf598a498fd1d54a69c66ab46a98506b8af65ded
 <
 auth/pom.xml,c\f\cf3c56ff971c67216817e39a7bd2756a0dd65833
-d
-4auth/src/main/java/com/exemple/auth/entity/Role.java,2\7\2733f3444d13a84f177cf558dddad04e4051266f
-d
-4auth/src/main/java/com/exemple/auth/entity/User.java,1\5\1511d4239e9133655a38ccf25d245b0a868257ad
-l
-<auth/src/main/java/com/exemple/auth/entity/AuthResponse.java,4\6\46f9f1215f8c895f27deca3095b5aec56a391273
-d
-4auth/src/main/java/com/exemple/auth/entity/Code.java,5\a\5a7b597a49fd8644694e2ff20213219a4259a209
-r
-Bauth/src/main/java/com/exemple/auth/repository/UserRepository.java,9\e\9e2b9c31b8208f4155911126485ebdaa893319b4
 r
 Bauth/src/main/java/com/example/auth/repository/UserRepository.java,e\5\e529aaef5aa31433f28b6ba5b21f8a91d3239de7
 l
@@ -196,8 +182,6 @@ x
 Hauth/src/main/java/com/example/auth/configuration/CustomUserDetails.java,9\a\9a8ecc6c0b49001e6902ce9c808e2d9effa26a00
 
 Oauth/src/main/java/com/example/auth/configuration/CustomUserDetailsService.java,8\5\852742af7d02d6d7c96dfdb071db505dfbc6d803
-n
->auth/src/main/java/com/example/auth/services/CookiService.java,b\9\b93250e25c202f4e0495f8185aa509e83e2504bf
 o
 ?auth/src/main/java/com/example/auth/services/CookieService.java,7\8\78f498b4dd04a0a094126423855ef50b5a693222
 d

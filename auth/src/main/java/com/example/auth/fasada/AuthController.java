@@ -20,10 +20,10 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class AuthController {
     private final UserService userService;
-@RequestMapping(path = "/api/v1/auth/validate", method = RequestMethod.GET)
-public String get(){
-    return "get";
-}
+//@RequestMapping(path = "/validate", method = RequestMethod.GET)
+//public String get(){
+//    return "get";
+//}
     @RequestMapping(path = "/register", method = RequestMethod.POST)
     public ResponseEntity<AuthResponse> addNewUser(@RequestBody UserRegisterDTO user) {
         userService.register(user);

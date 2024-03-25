@@ -5,40 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.0.2 auth">
-      <change afterPath="$PROJECT_DIR$/auth/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/AuthApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/CustomUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/UserConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/AuthResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/Code.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/UserRegisterDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/fasada/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/CookieService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/JwtServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/resources/db/migration/V1_InitTables.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/test/java/com/example/auth/AuthApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/be28cbf4cbdfeb9ffc25db477618b7ac511b58c5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/be28cbf4cbdfeb9ffc25db477618b7ac511b58c5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gatway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/UserConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/UserConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/UserRegisterDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/UserRegisterDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/fasada/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/fasada/AuthController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +32,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2e55M7ZVReD6GXid6fmbrvPffTe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -72,48 +45,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "Spring Boot.AuthApplication (1).executor": "Run",
-    "Spring Boot.AuthApplication.executor": "Run",
-    "Spring Boot.EurekaApplication.executor": "Run",
-    "Spring Boot.GatwayApplication.executor": "Run",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "graalvm-ce-17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/roman/IdeaProjects/shop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.start.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\roman\\IdeaProjects\\shop\\shop-fe\\node_modules\\prettier",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "ts.external.directory.path": "C:\\Users\\roman\\IdeaProjects\\shop\\shop-fe\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AuthApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AuthApplication .executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AuthApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatwayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;graalvm-ce-17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/roman/IdeaProjects/shop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\roman\\IdeaProjects\\shop\\shop-fe\\node_modules\\prettier&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\roman\\IdeaProjects\\shop\\shop-fe\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.exemple.auth.entity" />
@@ -122,8 +96,8 @@
       <recent name="C:\Users\roman\IdeaProjects\shop" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthApplication (1)">
-    <configuration name="AuthApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.AuthApplication ">
+    <configuration name="AuthApplication " type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <module name="auth" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.auth.AuthApplication" />
       <extension name="coverage">
@@ -168,11 +142,11 @@
       <item itemvalue="npm.start" />
       <item itemvalue="Spring Boot.GatwayApplication" />
       <item itemvalue="Spring Boot.EurekaApplication" />
-      <item itemvalue="Spring Boot.AuthApplication (1)" />
+      <item itemvalue="Spring Boot.AuthApplication " />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AuthApplication (1)" />
+        <item itemvalue="Spring Boot.AuthApplication " />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +166,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711181550424</updated>
-      <workItem from="1711181551466" duration="32541000" />
+      <workItem from="1711181551466" duration="32594000" />
+      <workItem from="1711308012210" duration="924000" />
+      <workItem from="1711376485528" duration="2454000" />
     </task>
     <task id="LOCAL-00001" summary="shop v0.0.1 init">
       <option name="closed" value="true" />
@@ -202,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711187447958</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="shop v0.0.2 auth">
+      <option name="closed" value="true" />
+      <created>1711307818014</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711307818014</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
