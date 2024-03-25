@@ -5,6 +5,8 @@ import com.example.auth.entity.Code;
 import com.example.auth.entity.User;
 import com.example.auth.entity.UserRegisterDTO;
 import com.example.auth.services.UserService;
+import io.jsonwebtoken.ExpiredJwtException;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -34,5 +36,15 @@ public class AuthController {
         log.info("--TRY LOGIN USER");
         return userService.login(response, user);
     }
+//    @RequestMapping(path = "/validate", method = RequestMethod.GET)
+//    public ResponseEntity<AuthResponse> validateToken(HttpServletRequest request){
+//        try {
+//            userService.validateToken(request);
+//            return ResponseEntity.ok(new AuthResponse(Code.PERMIT));
+//
+//        }catch (IllegalArgumentException| ExpiredJwtException e){
+//            return ResponseEntity.status(401).body(new AuthResponse(Code.A3));
+//        }
+//    }
 }
 
