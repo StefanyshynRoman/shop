@@ -1,20 +1,17 @@
 package com.example.auth.fasada;
 
-import com.example.auth.entity.AuthResponse;
-import com.example.auth.entity.Code;
-import com.example.auth.entity.User;
-import com.example.auth.entity.UserRegisterDTO;
+import com.example.auth.entity.*;
 import com.example.auth.services.UserService;
 import io.jsonwebtoken.ExpiredJwtException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1/auth")
@@ -22,29 +19,35 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class AuthController {
     private final UserService userService;
-//@RequestMapping(path = "/validate", method = RequestMethod.GET)
-//public String get(){
-//    return "get";
-//}
+
     @RequestMapping(path = "/register", method = RequestMethod.POST)
-    public ResponseEntity<AuthResponse> addNewUser(@RequestBody UserRegisterDTO user) {
+    public ResponseEntity<AuthResponse> addNewUser(@Valid @RequestBody UserRegisterDTO user) {
         userService.register(user);
         return ResponseEntity.ok(new AuthResponse(Code.SUCCESS));
     }
+
     @RequestMapping(path = "/login", method = RequestMethod.POST)
-    public ResponseEntity<?> login(@RequestBody User user, HttpServletResponse response){
+    public ResponseEntity<?> login(@RequestBody User user, HttpServletResponse response) {
         log.info("--TRY LOGIN USER");
         return userService.login(response, user);
     }
-//    @RequestMapping(path = "/validate", method = RequestMethod.GET)
-//    public ResponseEntity<AuthResponse> validateToken(HttpServletRequest request){
-//        try {
-//            userService.validateToken(request);
-//            return ResponseEntity.ok(new AuthResponse(Code.PERMIT));
-//
-//        }catch (IllegalArgumentException| ExpiredJwtException e){
-//            return ResponseEntity.status(401).body(new AuthResponse(Code.A3));
-//        }
-//    }
+
+    @RequestMapping(path = "/validate", method = RequestMethod.GET)
+    public ResponseEntity<AuthResponse> validateToken(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            userService.validateToken(request, response);
+            return ResponseEntity.ok(new AuthResponse(Code.PERMIT));
+        } catch (IllegalArgumentException | ExpiredJwtException e) {
+            return ResponseEntity.status(401).body(new AuthResponse(Code.A3));
+        }
+    }
+
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ValidationMessage handleValidationException(
+            MethodArgumentNotValidException ex
+    ) {
+        return new ValidationMessage(ex.getBindingResult().getAllErrors().get(0).getDefaultMessage());
+    }
 }
 

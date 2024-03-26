@@ -198,3 +198,11 @@ m
 auth/.gitignore,3\f\3f40ee23c275f0b958d22bbc20f2f7fed0726375
 Z
 *auth/.mvn/wrapper/maven-wrapper.properties,f\7\f7da12669fa618fc798e001e961ecb8e1d826bfd
+l
+<auth/src/main/java/com/example/auth/services/JwtService.java,3\5\35f408e0f319672e9dfd91655685834e9e9a6f2d
+q
+Aauth/src/main/java/com/example/auth/entity/ValidationMessage.java,4\8\48b9d8c627951a216d3e2bc79ae395b47e7dc14f
+x
+Hauth/src/main/java/com/example/auth/exceptions/UserExistingWithName.java,d\2\d2751638b774854d18c5a645933821f6ac67ae54
+x
+Hauth/src/main/java/com/example/auth/exceptions/UserExistingWithMail.java,7\4\7436ce9974c48c1d19de1120b25310f549e978d4

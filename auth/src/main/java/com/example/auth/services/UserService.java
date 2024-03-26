@@ -2,7 +2,9 @@ package com.example.auth.services;
 
 import com.example.auth.entity.*;
 import com.example.auth.repository.UserRepository;
+import io.jsonwebtoken.ExpiredJwtException;
 import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -14,6 +16,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
+
 
 @Service
 @RequiredArgsConstructor
@@ -21,9 +25,9 @@ import org.springframework.stereotype.Service;
 public class UserService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
-    private final JwtServices jwtServices;
+    private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
-   private final CookieService cookieService;
+    private final CookieService cookieService;
     @Value("${jwt.exp}")
     private int exp;
     @Value("${jwt.refresh.exp}")
@@ -34,12 +38,31 @@ public class UserService {
         return userRepository.saveAndFlush(user);
     }
 
-    public String generateToken(String username) {
-        return jwtServices.generateToken(username);
+    public String generateToken(String username, int exp) {
+        return jwtService.generateToken(username, exp);
     }
 
-    public void validateToken(String token) {
-        jwtServices.validateToken(token);
+    public void validateToken(HttpServletRequest request, HttpServletResponse response) throws ExpiredJwtException, IllegalArgumentException {
+        String token = null;
+        String refresh = null;
+        for (Cookie value : Arrays.stream(request.getCookies()).toList()) {
+            if (value.getName().equals("Authorization")) {
+                token = value.getValue();
+            } else if (value.getName().equals("refresh")) {
+                refresh = value.getValue();
+            }
+        }
+        try {
+            jwtService.validateToken(token);
+        } catch (IllegalArgumentException | ExpiredJwtException e) {
+            jwtService.validateToken(refresh);
+            Cookie refreshCookie=cookieService.generateCookie(
+                    "refresh", jwtService.refreshToken(refresh, refreshExp),refreshExp);
+            Cookie cookie=cookieService.generateCookie(
+                    "Authorization", jwtService.refreshToken(refresh, exp),exp);
+            response.addCookie(cookie);
+            response.addCookie(refreshCookie);
+        }
     }
 
     public void register(UserRegisterDTO userRegisterDTO) {
@@ -61,8 +84,8 @@ public class UserService {
         if (user != null) {
             Authentication authenticate = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authRequest.getUsername(), authRequest.getPassword()));
             if (authenticate.isAuthenticated()) {
-                Cookie refresh = cookieService.generateCookie("token", generateToken(authRequest.getUsername()), exp);
-                Cookie cookie = cookieService.generateCookie("refresh", generateToken(authRequest.getUsername()), refreshExp);
+                Cookie refresh = cookieService.generateCookie("refresh", generateToken(authRequest.getUsername(),refreshExp), refreshExp);
+                Cookie cookie = cookieService.generateCookie("token", generateToken(authRequest.getUsername(), exp), exp);
                 response.addCookie(cookie);
                 response.addCookie(refresh);
                 return ResponseEntity.ok(
@@ -70,6 +93,7 @@ public class UserService {
                                 .builder()
                                 .login(user.getUsername())
                                 .email(user.getEmail())
+                                .role(user.getRole())
                                 .build());
             } else {
                 log.info("--STOP LoginService");
