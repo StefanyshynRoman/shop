@@ -206,3 +206,9 @@ x
 Hauth/src/main/java/com/example/auth/exceptions/UserExistingWithName.java,d\2\d2751638b774854d18c5a645933821f6ac67ae54
 x
 Hauth/src/main/java/com/example/auth/exceptions/UserExistingWithMail.java,7\4\7436ce9974c48c1d19de1120b25310f549e978d4
+j
+:gatway/src/main/java/com/exemple/gatway/utils/JwtUtil.java,9\b\9b7a7bf2e512dfb99a31c9be81372065e036fe04
+r
+Bgatway/src/main/java/com/exemple/gatway/filter/RouteValidator.java,5\b\5b18659a4c307fecd7df265b8d3dcb950bb0cc36
+m
+=gatway/src/main/java/com/exemple/gatway/config/AppConfig.java,5\a\5abd1199b7d0f119541952fad8db96e53c871379
