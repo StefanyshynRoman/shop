@@ -212,3 +212,7 @@ r
 Bgatway/src/main/java/com/exemple/gatway/filter/RouteValidator.java,5\b\5b18659a4c307fecd7df265b8d3dcb950bb0cc36
 m
 =gatway/src/main/java/com/exemple/gatway/config/AppConfig.java,5\a\5abd1199b7d0f119541952fad8db96e53c871379
+x
+Hgatway/src/main/java/com/exemple/gatway/filter/AuthenticationFilter.java,9\d\9d17e97155496ce816bb28d5ace7485e92cdb95b
+l
+<gatway/src/main/java/com/exemple/gatway/config/Carousel.java,0\8\089bbfc2a8d6b31debdda2a3ba358a761d4602e1

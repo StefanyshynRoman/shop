@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.0.4 auth">
-      <change afterPath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/filter/RouteValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/utils/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/be28cbf4cbdfeb9ffc25db477618b7ac511b58c5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/be28cbf4cbdfeb9ffc25db477618b7ac511b58c5" afterDir="false" />
+    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.0.5 auth_gat_way">
+      <change afterPath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/config/Carousel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/filter/AuthenticationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/exceptions/UserExistingWithMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/exceptions/UserExistingWithMail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/fasada/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/fasada/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gatway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/filter/RouteValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/filter/RouteValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gatway/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +174,7 @@
       <workItem from="1711376485528" duration="3362000" />
       <workItem from="1711390425029" duration="984000" />
       <workItem from="1711391437373" duration="713000" />
-      <workItem from="1711462449785" duration="11040000" />
+      <workItem from="1711462449785" duration="15335000" />
     </task>
     <task id="LOCAL-00001" summary="shop v0.0.1 init">
       <option name="closed" value="true" />
@@ -219,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711479633267</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="shop v0.0.5 auth_gat_way">
+      <option name="closed" value="true" />
+      <created>1711569391671</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711569391671</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +239,8 @@
     <MESSAGE value="shop v0.0.2 auth" />
     <MESSAGE value="shop v0.0.3 auth" />
     <MESSAGE value="shop v0.0.4 auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop v0.0.4 auth" />
+    <MESSAGE value="shop v0.0.5 auth_gat_way" />
+    <option name="LAST_COMMIT_MESSAGE" value="shop v0.0.5 auth_gat_way" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
