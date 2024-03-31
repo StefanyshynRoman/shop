@@ -11,6 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -47,32 +48,37 @@ public class UserService {
     public void validateToken(HttpServletRequest request, HttpServletResponse response) throws ExpiredJwtException, IllegalArgumentException {
         String token = null;
         String refresh = null;
-        for (Cookie value : Arrays.stream(request.getCookies()).toList()) {
-            if (value.getName().equals("Authorization")) {
-                token = value.getValue();
-            } else if (value.getName().equals("refresh")) {
-                refresh = value.getValue();
+        if (request.getCookies() != null) {
+            for (Cookie value : Arrays.stream(request.getCookies()).toList()) {
+                if (value.getName().equals("Authorization")) {
+                    token = value.getValue();
+                } else if (value.getName().equals("refresh")) {
+                    refresh = value.getValue();
+                }
             }
+        } else {
+            throw new IllegalArgumentException("Token can't be null");
         }
+
         try {
             jwtService.validateToken(token);
         } catch (IllegalArgumentException | ExpiredJwtException e) {
             jwtService.validateToken(refresh);
-            Cookie refreshCookie=cookieService.generateCookie(
-                    "refresh", jwtService.refreshToken(refresh, refreshExp),refreshExp);
-            Cookie cookie=cookieService.generateCookie(
-                    "Authorization", jwtService.refreshToken(refresh, exp),exp);
+            Cookie refreshCookie = cookieService.generateCookie(
+                    "refresh", jwtService.refreshToken(refresh, refreshExp), refreshExp);
+            Cookie cookie = cookieService.generateCookie(
+                    "Authorization", jwtService.refreshToken(refresh, exp), exp);
             response.addCookie(cookie);
             response.addCookie(refreshCookie);
         }
     }
 
-    public void register(UserRegisterDTO userRegisterDTO) throws UserExistingWithName, UserExistingWithMail{
-        userRepository.findUserByLogin(userRegisterDTO.getLogin()).ifPresent(value->{
-            throw  new UserExistingWithName("User with this name is present");
+    public void register(UserRegisterDTO userRegisterDTO) throws UserExistingWithName, UserExistingWithMail {
+        userRepository.findUserByLogin(userRegisterDTO.getLogin()).ifPresent(value -> {
+            throw new UserExistingWithName("User with this name is present");
         });
-        userRepository.findUserByEmail(userRegisterDTO.getEmail()).ifPresent(value->{
-            throw  new UserExistingWithMail("User with this email is present");
+        userRepository.findUserByEmail(userRegisterDTO.getEmail()).ifPresent(value -> {
+            throw new UserExistingWithMail("User with this email is present");
         });
         User user = new User();
         user.setLogin(userRegisterDTO.getLogin());
@@ -92,7 +98,7 @@ public class UserService {
         if (user != null) {
             Authentication authenticate = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authRequest.getUsername(), authRequest.getPassword()));
             if (authenticate.isAuthenticated()) {
-                Cookie refresh = cookieService.generateCookie("refresh", generateToken(authRequest.getUsername(),refreshExp), refreshExp);
+                Cookie refresh = cookieService.generateCookie("refresh", generateToken(authRequest.getUsername(), refreshExp), refreshExp);
                 Cookie cookie = cookieService.generateCookie("token", generateToken(authRequest.getUsername(), exp), exp);
                 response.addCookie(cookie);
                 response.addCookie(refresh);
@@ -114,4 +120,29 @@ public class UserService {
     }
 
 
+    public ResponseEntity<?> loginByToken(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            validateToken(request, response);
+            String refresh = null;
+            for (Cookie value : Arrays.stream(request.getCookies()).toList()) {
+                if (value.getName().equals("refresh")) {
+                    refresh = value.getValue();
+                }
+            }
+            String login = jwtService.getSubject(refresh);
+            User user = userRepository.findUserByLoginAndLockAndEnabled(login).orElse(null);
+            if (user != null) {
+                return ResponseEntity.ok(
+                        UserRegisterDTO
+                                .builder()
+                                .login(user.getUsername())
+                                .email(user.getEmail())
+                                .role(user.getRole())
+                                .build());
+            }
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(new AuthResponse(Code.A1));
+        } catch (ExpiredJwtException | IllegalArgumentException e) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(new AuthResponse(Code.A3));
+        }
+    }
 }

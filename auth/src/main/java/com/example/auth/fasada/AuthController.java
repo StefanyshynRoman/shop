@@ -33,7 +33,10 @@ public class AuthController {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new AuthResponse(Code.A5));
         }
     }
-
+  @RequestMapping(path = "/auto-login", method = RequestMethod.GET)
+  public ResponseEntity<?> loggedIn(HttpServletResponse response, HttpServletRequest request){
+        return userService.loginByToken(request,response);
+  }
     @RequestMapping(path = "/login", method = RequestMethod.POST)
     public ResponseEntity<?> login(@RequestBody User user, HttpServletResponse response) {
         log.info("--TRY LOGIN USER");
