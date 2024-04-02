@@ -216,3 +216,9 @@ x
 Hgatway/src/main/java/com/exemple/gatway/filter/AuthenticationFilter.java,9\d\9d17e97155496ce816bb28d5ace7485e92cdb95b
 l
 <gatway/src/main/java/com/exemple/gatway/config/Carousel.java,0\8\089bbfc2a8d6b31debdda2a3ba358a761d4602e1
+m
+=auth/src/main/java/com/example/auth/entity/LoginResponse.java,6\5\650c97fbe1c039f095c1ff0aa6481ddad75262e8
+y
+Iauth/src/main/java/com/example/auth/configuration/EmailConfiguration.java,1\6\16a546d01451aa6e66655e6585414584006229f7
+n
+>auth/src/main/java/com/example/auth/services/EmailService.java,1\4\142a2c307353865158fe7342a7745cccffae1fa7

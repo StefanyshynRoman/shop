@@ -33,14 +33,26 @@ public class AuthController {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new AuthResponse(Code.A5));
         }
     }
-  @RequestMapping(path = "/auto-login", method = RequestMethod.GET)
-  public ResponseEntity<?> loggedIn(HttpServletResponse response, HttpServletRequest request){
-        return userService.loginByToken(request,response);
-  }
+
+    @RequestMapping(path = "/auto-login", method = RequestMethod.GET)
+    public ResponseEntity<?> autoLogin(HttpServletResponse response, HttpServletRequest request) {
+        return userService.loginByToken(request, response);
+    }
+
     @RequestMapping(path = "/login", method = RequestMethod.POST)
     public ResponseEntity<?> login(@RequestBody User user, HttpServletResponse response) {
         log.info("--TRY LOGIN USER");
         return userService.login(response, user);
+    }
+
+    @RequestMapping(path = "/logged-in", method = RequestMethod.GET)
+    public ResponseEntity<?> loggedIn(HttpServletResponse response, HttpServletRequest request) {
+        return userService.loggedIn(request, response);
+    }
+
+    @RequestMapping(path = "/logout", method = RequestMethod.GET)
+    public ResponseEntity<?> logout(HttpServletResponse response, HttpServletRequest request) {
+        return userService.logout(request, response);
     }
 
     @RequestMapping(path = "/validate", method = RequestMethod.GET)
