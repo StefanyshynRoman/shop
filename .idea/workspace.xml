@@ -4,15 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.0.5 auth_config_enable">
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/EmailConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/LoginResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/EmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/resources/static/mail-activ.html" afterDir="false" />
+    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.0.6 auth_send_mail">
+      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/ChangePasswordData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/ResetOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/ResetPasswordData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/exceptions/UserDontExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/repository/ResetOperationsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/ResetOperationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/resources/db/migration/V2__InitTables.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/resources/static/resetuj-haslo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/UserConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/UserConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/fasada/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/fasada/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/EmailService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -26,6 +33,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -103,7 +111,7 @@
       <recent name="C:\Users\roman\IdeaProjects\shop" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.mail-activ.html">
+  <component name="RunManager" selected="Spring Boot.AuthApplication ">
     <configuration name="mail-activ.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/shop/auth/src/main/resources/static/mail-activ.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -157,8 +165,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.mail-activ.html" />
         <item itemvalue="Spring Boot.AuthApplication " />
+        <item itemvalue="JavaScript Debug.mail-activ.html" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +190,7 @@
       <workItem from="1711376485528" duration="3362000" />
       <workItem from="1711390425029" duration="984000" />
       <workItem from="1711391437373" duration="713000" />
-      <workItem from="1711462449785" duration="26546000" />
+      <workItem from="1711462449785" duration="34781000" />
     </task>
     <task id="LOCAL-00001" summary="shop v0.0.1 init">
       <option name="closed" value="true" />
@@ -248,7 +256,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711906326529</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="shop v0.0.6 auth_send_mail">
+      <option name="closed" value="true" />
+      <created>1712044941073</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712044941073</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +293,8 @@
     <MESSAGE value="shop v0.0.5 auth_gat_way" />
     <MESSAGE value="shop v0.0.5 auth_config" />
     <MESSAGE value="shop v0.0.5 auth_config_enable" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop v0.0.5 auth_config_enable" />
+    <MESSAGE value="shop v0.0.6 auth_send_mail" />
+    <option name="LAST_COMMIT_MESSAGE" value="shop v0.0.6 auth_send_mail" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,6 +1,7 @@
 package com.example.auth.fasada;
 
 import com.example.auth.entity.*;
+import com.example.auth.exceptions.UserDontExistException;
 import com.example.auth.exceptions.UserExistingWithMail;
 import com.example.auth.exceptions.UserExistingWithName;
 import com.example.auth.services.UserService;
@@ -62,6 +63,38 @@ public class AuthController {
             return ResponseEntity.ok(new AuthResponse(Code.PERMIT));
         } catch (IllegalArgumentException | ExpiredJwtException e) {
             return ResponseEntity.status(401).body(new AuthResponse(Code.A3));
+        }
+    }
+
+    @RequestMapping(path = "/activate", method = RequestMethod.GET)
+    public ResponseEntity<AuthResponse> activateUser(@RequestParam String uid) {
+        try {
+            userService.activateUser(uid);
+            return ResponseEntity.ok(new AuthResponse(Code.SUCCESS));
+        } catch (UserDontExistException e) {
+            return ResponseEntity.status(400).body(new AuthResponse(Code.A6));
+        }
+    }
+
+    @RequestMapping(path = "/reset-password", method = RequestMethod.POST)
+    public ResponseEntity<AuthResponse> sendMailRecovery(@RequestBody ResetPasswordData resetPasswordData) {
+        try {
+            userService.recoveryPassword(resetPasswordData.getEmail());
+            return ResponseEntity.ok(new AuthResponse(Code.SUCCESS));
+
+        } catch (UserDontExistException e) {
+            return ResponseEntity.status(400).body(new AuthResponse(Code.A6));
+        }
+    }
+
+    @RequestMapping(path = "/reset-password", method = RequestMethod.PATCH)
+    public ResponseEntity<AuthResponse> recoveryMail(@RequestBody ChangePasswordData changePasswordData) {
+        try {
+            userService.restPassword(changePasswordData);
+            return ResponseEntity.ok(new AuthResponse(Code.SUCCESS));
+
+        } catch (UserDontExistException e) {
+            return ResponseEntity.status(400).body(new AuthResponse(Code.A6));
         }
     }
 

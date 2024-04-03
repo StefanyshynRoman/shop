@@ -31,4 +31,14 @@ public class EmailService {
         }
 
     }
+
+    public void sendPasswordRecovery(User user) {
+        try {
+            String html = Files.toString(activeTemplate.getFile(), Charsets.UTF_8);
+            html = html.replace("https://google.com", frontendUrl + "/odzyskaj-haslo/" + user.getUuid());
+            emailConfiguration.sendMail(user.getEmail(), html, "Odzyskanie hasła", true);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
