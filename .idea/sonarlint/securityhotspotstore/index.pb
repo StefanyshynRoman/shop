@@ -238,3 +238,15 @@ o
 Mauth/src/main/java/com/example/auth/repository/ResetOperationsRepository.java,b\e\bee01c6684b98886112f7ef0d7b3a19b53e4eaf3
 w
 Gauth/src/main/java/com/example/auth/services/ResetOperationService.java,2\a\2a2fe6e2999e8b59c9769026cb1e7e87d4cd798e
+[
++shop-fe/src/app/modules/auth/auth.module.ts,b\c\bc6a195fec1661020bfbc48a59319e2cb372c344
+c
+3shop-fe/src/app/modules/auth/auth-routing.module.ts,d\1\d16404cfa855e4a439712d4ab17f4318e1712f7e
+o
+?shop-fe/src/app/modules/auth/comonents/login/login.component.ts,1\b\1bf6229d188c5107f55846e2c49a08c7bb2a4389
+q
+Ashop-fe/src/app/modules/auth/comonents/login/login.component.html,7\2\72f65f674364dece0d9158e741c4126611e2e737
+q
+Ashop-fe/src/app/modules/auth/comonents/login/login.component.scss,5\2\52fd336adec4fa3ebd4af7db1e64b9d023fffbed
+t
+Dshop-fe/src/app/modules/auth/comonents/login/login.component.spec.ts,3\0\30f81c8b1f3338122521d9d32245817de33b2281

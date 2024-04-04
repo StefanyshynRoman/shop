@@ -4,11 +4,13 @@ import com.example.auth.entity.*;
 import com.example.auth.exceptions.UserDontExistException;
 import com.example.auth.exceptions.UserExistingWithMail;
 import com.example.auth.exceptions.UserExistingWithName;
+import com.example.auth.repository.ResetOperationsRepository;
 import com.example.auth.repository.UserRepository;
 import io.jsonwebtoken.ExpiredJwtException;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -33,6 +35,8 @@ public class UserService {
     private final AuthenticationManager authenticationManager;
     private final EmailService emailService;
     private final CookieService cookieService;
+    private final ResetOperationService resetOperationService;
+    private final ResetOperationsRepository resetOperationsRepository;
     @Value("${jwt.exp}")
     private int exp;
     @Value("${jwt.refresh.exp}")
@@ -178,18 +182,26 @@ public class UserService {
     public void recoveryPassword(String email) throws UserDontExistException {
         User user = userRepository.findUserByEmail(email).orElse(null);
         if (user != null) {
-            emailService.sendPasswordRecovery(user);
+            ResetOperations resetOperations = resetOperationService.initResetOperation(user);
+            emailService.sendPasswordRecovery(user, resetOperations.getUid());
             return;
         }
         throw new UserDontExistException("User dont exist");
     }
 
-    public void restPassword(ChangePasswordData changePasswordData)throws UserDontExistException {
-        User user = userRepository.findUserByUuid(changePasswordData.getUid()).orElse(null);
-        if (user != null) {
-            user.setPassword(changePasswordData.getPassword());
-            saveUser(user);
-            return;
+    @Transactional
+    public void restPassword(ChangePasswordData changePasswordData) throws UserDontExistException {
+        ResetOperations resetOperations = resetOperationsRepository.findByUid(changePasswordData.getUid()).orElse(null);
+        if (resetOperations != null) {
+            User user = userRepository.findUserByUuid(changePasswordData.getUid()).orElse(null);
+
+
+            if (user != null) {
+                user.setPassword(changePasswordData.getPassword());
+                saveUser(user);
+                resetOperationService.endOperation(resetOperations.getUid());
+                return;
+            }
         }
         throw new UserDontExistException("User dont exist");
     }

@@ -8,9 +8,11 @@ import java.util.function.Predicate;
 @Component
 public class RouteValidator {
     public static final List<String> openApiEndpoints = List.of(
-          //  "/auth/register",
+           "auth/register",
             "/auth/login",
-            "/auth/validate"
+            "/auth/validate",
+            "/auth/activate",
+            "/auth/reset-password"
     );
     public Predicate<ServerHttpRequest> isSecure =
             request -> openApiEndpoints
