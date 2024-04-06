@@ -274,3 +274,5 @@ x
 Hshop-fe/src/app/modules/auth/components/register/register.component.scss,5\4\540c8bdbd96a803c1b4ec0cdc0c6395b7ea0159b
 {
 Kshop-fe/src/app/modules/auth/components/register/register.component.spec.ts,9\5\9587521818430d727c0d96c9e9b3383aaa529dfd
+c
+3shop-fe/src/app/modules/core/models/forms.models.ts,f\6\f6b874141e8631ecb55416d0017c7a4b7c4b3a1f
