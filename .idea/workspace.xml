@@ -4,29 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.0.9 auth_controls-fe">
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/account-activation/account-activation.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/account-activation/account-activation.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/account-activation/account-activation.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/account-activation/account-activation.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery-form/password-recovery-form.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery-form/password-recovery-form.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery-form/password-recovery-form.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery-form/password-recovery-form.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery/password-recovery.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery/password-recovery.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery/password-recovery.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery/password-recovery.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/shared/validators/equivalent.validator.ts" afterDir="false" />
+    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.0.10 auth_controls-fe">
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.effects.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.selectors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/auth.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/auth.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/store/app.reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/environments/environment.development.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/environments/environment.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/auth-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/auth-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/auth.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/forms.models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/forms.models.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/form.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/form.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/core.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/core.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +191,7 @@
       <workItem from="1711376485528" duration="3362000" />
       <workItem from="1711390425029" duration="984000" />
       <workItem from="1711391437373" duration="713000" />
-      <workItem from="1711462449785" duration="55732000" />
+      <workItem from="1711462449785" duration="61511000" />
     </task>
     <task id="LOCAL-00001" summary="shop v0.0.1 init">
       <option name="closed" value="true" />
@@ -311,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712422901145</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="shop v0.0.10 auth_controls-fe">
+      <option name="closed" value="true" />
+      <created>1712491874577</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712491874577</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +347,8 @@
     <MESSAGE value="shop v0.0.8 auth_end_be" />
     <MESSAGE value="shop v0.0.8 auth_fe" />
     <MESSAGE value="shop v0.0.9 auth_controls-fe" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop v0.0.9 auth_controls-fe" />
+    <MESSAGE value="shop v0.0.10 auth_controls-fe" />
+    <option name="LAST_COMMIT_MESSAGE" value="shop v0.0.10 auth_controls-fe" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
