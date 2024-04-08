@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.0.11 auth_service-fe">
+    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.0.12 auth_service-fe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/register/register.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/register/register.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.effects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.effects.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +186,7 @@
       <workItem from="1711376485528" duration="3362000" />
       <workItem from="1711390425029" duration="984000" />
       <workItem from="1711391437373" duration="713000" />
-      <workItem from="1711462449785" duration="63360000" />
+      <workItem from="1711462449785" duration="68119000" />
     </task>
     <task id="LOCAL-00001" summary="shop v0.0.1 init">
       <option name="closed" value="true" />
@@ -308,7 +316,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712509924665</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="shop v0.0.12 auth_service-fe">
+      <option name="closed" value="true" />
+      <created>1712511004150</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1712511004150</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +360,8 @@
     <MESSAGE value="shop v0.0.9 auth_controls-fe" />
     <MESSAGE value="shop v0.0.10 auth_controls-fe" />
     <MESSAGE value="shop v0.0.11 auth_service-fe" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop v0.0.11 auth_service-fe" />
+    <MESSAGE value="shop v0.0.12 auth_service-fe" />
+    <option name="LAST_COMMIT_MESSAGE" value="shop v0.0.12 auth_service-fe" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

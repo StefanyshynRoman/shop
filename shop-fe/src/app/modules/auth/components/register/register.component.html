@@ -1,4 +1,4 @@
-<form [formGroup]="registerForm">
+<form [formGroup]="registerForm" (ngSubmit)="onRegister()">
   <div class="form-input">
     <mat-form-field appearance="fill">
       <mat-label>Address e-mail</mat-label>
@@ -7,21 +7,21 @@
     </mat-form-field>
   </div>
   <div class="form-input">
-    <mat-form-field appearance="fill" >
+    <mat-form-field appearance="fill">
       <mat-label>Login</mat-label>
       <input matInput [formControl]="controls.login">
       <mat-error *ngIf="controls.login.invalid">{{ getErrorMessage(controls.login) }}</mat-error>
     </mat-form-field>
   </div>
   <div class="form-input">
-    <mat-form-field appearance="fill" >
+    <mat-form-field appearance="fill">
       <mat-label>Password</mat-label>
       <input type="password" matInput [formControl]="controls.password">
       <mat-error *ngIf="controls.password.invalid">{{ getErrorMessage(controls.password) }}</mat-error>
     </mat-form-field>
   </div>
   <div class="form-input">
-    <mat-form-field appearance="fill" >
+    <mat-form-field appearance="fill">
       <mat-label>Repeat password</mat-label>
       <input type="password" matInput [formControl]="controls.repeatedPassword">
       <mat-error *ngIf="controls.repeatedPassword.invalid">{{ getErrorMessage(controls.repeatedPassword) }}</mat-error>
@@ -30,5 +30,9 @@
   <div class="d-flex justify-content-end">
     <button mat-raised-button color="primary" [disabled]="registerForm.invalid">Register</button>
   </div>
-
+  <div class="alert alert-warning alert-dismissible fade show mt-2" role="alert" *ngIf="notMatchingPasswordErr">
+    {{ notMatchingPasswordErr }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
+            (click)="notMatchingPasswordErr=null"></button>
+  </div>
 </form>
