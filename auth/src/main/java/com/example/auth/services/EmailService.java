@@ -3,6 +3,7 @@ package com.example.auth.services;
 import com.example.auth.configuration.EmailConfiguration;
 import com.example.auth.entity.User;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.core.io.Resource;
@@ -14,6 +15,8 @@ import java.io.IOException;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
+
 public class EmailService {
     private final EmailConfiguration emailConfiguration;
     @Value("${front.url}")
@@ -25,6 +28,8 @@ public class EmailService {
         try {
             String html = Files.toString(activeTemplate.getFile(), Charsets.UTF_8);
             html = html.replace("https://google.com", frontendUrl + "/aktywuj/" + user.getUuid());
+            log.warn(html);
+            log.info(user.getUuid());
             emailConfiguration.sendMail(user.getEmail(), html, "Aktywacja konta", true);
         } catch (IOException e) {
             throw new RuntimeException(e);

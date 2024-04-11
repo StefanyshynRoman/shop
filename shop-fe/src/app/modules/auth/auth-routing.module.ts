@@ -9,7 +9,7 @@ import { PasswordRecoveryFormComponent } from './components/password-recovery-fo
 const routes: Routes = [
   { path: 'logowanie', component: LoginComponent },
   { path: 'rejestracja', component: RegisterComponent },
-  { path: 'actywuj/:uid', component: AccountActivationComponent },
+  { path: 'aktywuj/:uid', component: AccountActivationComponent },
   { path: 'odzyskaj-haslo', component: PasswordRecoveryComponent },
   { path: 'odzyskaj-haslo/:uid', component: PasswordRecoveryFormComponent },
 ];

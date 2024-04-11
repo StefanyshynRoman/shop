@@ -322,3 +322,7 @@ e
 5shop-fe/src/app/modules/core/services/auth.service.ts,2\7\27af91334f7a0e82a51e9362ab68f9c1403d80a2
 j
 :shop-fe/src/app/modules/core/services/auth.service.spec.ts,8\f\8f5e7171e4a346da1c9e0ea53052c9eba1f4fe40
+w
+Gshop-fe/src/app/modules/core/interceptors/error-handling.interceptor.ts,2\1\2187a9d1c4eb1c3e9fbbe4f7bc544beb2449510d
+|
+Lshop-fe/src/app/modules/core/interceptors/error-handling.interceptor.spec.ts,7\5\758f36a202fb880d0b3483315f4a5c399367263e

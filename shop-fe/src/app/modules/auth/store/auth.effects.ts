@@ -34,9 +34,9 @@ export class AuthEffects {
             );
             return AuthActions.registerSuccess();
           }),
-          catchError((err) =>
-            of(AuthActions.loginFailure({ error: 'Wysapil blad. ' })),
-          ),
+          catchError((err) => {
+            return of(AuthActions.loginFailure({ error: err }));
+          }),
         );
       }),
     );

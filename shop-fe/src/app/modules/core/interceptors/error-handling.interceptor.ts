@@ -3,16 +3,28 @@ import {
   HttpRequest,
   HttpHandler,
   HttpEvent,
-  HttpInterceptor
+  HttpInterceptor,
+  HttpErrorResponse,
 } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { catchError, Observable, throwError } from 'rxjs';
 
 @Injectable()
 export class ErrorHandlingInterceptor implements HttpInterceptor {
-
-  constructor() {}
-
-  intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
-    return next.handle(request);
+  intercept(
+    request: HttpRequest<unknown>,
+    next: HttpHandler,
+  ): Observable<HttpEvent<unknown>> {
+    return next.handle(request).pipe(
+      catchError((error: HttpErrorResponse) => {
+        let errorMsg = '';
+        if (error.status >= 400 && error.status < 500) {
+          errorMsg =
+            error.error.message || 'Wystempil blad. sprobuj ponownie!!!';
+        } else {
+          errorMsg = 'Wystempil blad. sprobuj ponownie';
+        }
+        return throwError(errorMsg);
+      }),
+    );
   }
 }

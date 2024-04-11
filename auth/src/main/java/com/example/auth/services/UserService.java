@@ -170,9 +170,12 @@ public class UserService {
     }
 
     public void activateUser(String uid) throws UserDontExistException {
+        log.info("rrrrrrrrrrr", new String[]{uid});
+        log.info(uid);
         User user = userRepository.findUserByUuid(uid).orElse(null);
         if (user != null) {
             user.setLock(false);
+            user.setEnabled(true);
             userRepository.save(user);
             return;
         }

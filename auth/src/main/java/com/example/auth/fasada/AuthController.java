@@ -70,8 +70,10 @@ public class AuthController {
     public ResponseEntity<AuthResponse> activateUser(@RequestParam String uid) {
         try {
             userService.activateUser(uid);
+            log.info(uid);
             return ResponseEntity.ok(new AuthResponse(Code.SUCCESS));
         } catch (UserDontExistException e) {
+            log.info("ddddddddddddddddddddddddddddd");
             return ResponseEntity.status(400).body(new AuthResponse(Code.A6));
         }
     }
