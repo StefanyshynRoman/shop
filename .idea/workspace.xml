@@ -4,18 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.0.12 auth_service-fe">
+    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.0.14 auth_intercept-fe">
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/interceptors/error-handling.interceptor.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/interceptors/error-handling.interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/UserConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/UserConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/register/register.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/register/register.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.effects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.effects.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/environments/environment.development.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/environments/environment.development.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +187,7 @@
       <workItem from="1711376485528" duration="3362000" />
       <workItem from="1711390425029" duration="984000" />
       <workItem from="1711391437373" duration="713000" />
-      <workItem from="1711462449785" duration="68119000" />
+      <workItem from="1711462449785" duration="75294000" />
     </task>
     <task id="LOCAL-00001" summary="shop v0.0.1 init">
       <option name="closed" value="true" />
@@ -324,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712511004150</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="shop v0.0.13 auth_effects-fe">
+      <option name="closed" value="true" />
+      <created>1712590997595</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1712590997595</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +370,9 @@
     <MESSAGE value="shop v0.0.10 auth_controls-fe" />
     <MESSAGE value="shop v0.0.11 auth_service-fe" />
     <MESSAGE value="shop v0.0.12 auth_service-fe" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop v0.0.12 auth_service-fe" />
+    <MESSAGE value="shop v0.0.13 auth_effects-fe" />
+    <MESSAGE value="shop v0.0.14 auth_intercept-fe" />
+    <option name="LAST_COMMIT_MESSAGE" value="shop v0.0.14 auth_intercept-fe" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

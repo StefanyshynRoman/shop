@@ -30,7 +30,7 @@ export class AuthEffects {
             this.router.navigate(['/logowanie']);
             this.notifierService.notify(
               'success',
-              'Poprawno utworzono konto uzytkownika',
+              'Poprawno utworzono konto uzytkownika! Aktywuj konto na podanym adresie e-mail.',
             );
             return AuthActions.registerSuccess();
           }),
