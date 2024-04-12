@@ -170,8 +170,6 @@ m
 =auth/src/main/java/com/example/auth/services/UserService.java,e\3\e3fbae843ff15f55f1ac0f5f9173f852a8db3937
 x
 Hauth/src/main/java/com/example/auth/configuration/UserConfiguration.java,a\e\ae5b9bbd96fa571bcf3aa429b66d67760b39eccb
-m
-=auth/src/main/java/com/example/auth/services/JwtServices.java,a\7\a706005f2121be063aa9bf6ba2633e1e7b90faf7
 n
 >auth/src/main/java/com/example/auth/fasada/AuthController.java,0\0\0079eb5f9cabae7a03f9ab4939aa5574723b7c5f
 o
@@ -228,10 +226,6 @@ q
 Aauth/src/main/java/com/example/auth/entity/ResetPasswordData.java,0\c\0cbadea2908e46b275ae1b50ef81940e6311fccd
 r
 Bauth/src/main/java/com/example/auth/entity/ChangePasswordData.java,7\e\7ead39cd75e1bb7272077dbb3875252516ee380c
-q
-Aauth/src/main/java/com/example/auth/services/ResetOperations.java,d\d\dd21aa16ae567e28a26b08b20913daf5515efc53
-y
-Iauth/src/main/java/com/example/auth/services/ResetOperationsServices.java,9\6\9646107482bb10d129895606f9bf0f9804e840c6
 o
 ?auth/src/main/java/com/example/auth/entity/ResetOperations.java,e\6\e65e056973d69681f756433212a8b2ba2b2672d7
 }
@@ -242,14 +236,6 @@ Gauth/src/main/java/com/example/auth/services/ResetOperationService.java,2\a\2a
 +shop-fe/src/app/modules/auth/auth.module.ts,b\c\bc6a195fec1661020bfbc48a59319e2cb372c344
 c
 3shop-fe/src/app/modules/auth/auth-routing.module.ts,d\1\d16404cfa855e4a439712d4ab17f4318e1712f7e
-o
-?shop-fe/src/app/modules/auth/comonents/login/login.component.ts,1\b\1bf6229d188c5107f55846e2c49a08c7bb2a4389
-q
-Ashop-fe/src/app/modules/auth/comonents/login/login.component.html,7\2\72f65f674364dece0d9158e741c4126611e2e737
-q
-Ashop-fe/src/app/modules/auth/comonents/login/login.component.scss,5\2\52fd336adec4fa3ebd4af7db1e64b9d023fffbed
-t
-Dshop-fe/src/app/modules/auth/comonents/login/login.component.spec.ts,3\0\30f81c8b1f3338122521d9d32245817de33b2281
 N
 shop-fe/src/material.module.ts,b\e\be981662424d1fb1f370be821e6713d3b320ac2d
 _

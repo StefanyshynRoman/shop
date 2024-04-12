@@ -13,10 +13,12 @@ export class AuthEffects {
       ofType(AuthActions.login),
       switchMap((action) => {
         return this.authService.login(action.loginData).pipe(
-          map((user) => AuthActions.loginSuccess({ user: { ...user } })),
-          catchError((err) =>
-            of(AuthActions.loginFailure({ error: 'Wysapil blad. ' })),
-          ),
+          map((user) => {
+            this.router.navigate(['/']);
+            this.notifierService.notify('success', 'Poprawno zalogowano sie!');
+            return AuthActions.loginSuccess({ user: { ...user } });
+          }),
+          catchError((err) => of(AuthActions.loginFailure({ error: err }))),
         );
       }),
     );

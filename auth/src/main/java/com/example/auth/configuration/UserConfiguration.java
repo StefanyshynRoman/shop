@@ -77,7 +77,9 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
-        config.addAllowedOrigin("*"); // Розрішити всі домени
+        config.setAllowCredentials(true);
+        config.addAllowedOriginPattern("*://localhost:4200");
+        // config.addAllowedOrigin("*"); // Розрішити всі домени
         config.addAllowedMethod("*"); // Розрішити всі HTTP методи
         config.addAllowedHeader("*"); // Розрішити всі заголовки
         source.registerCorsConfiguration("/**", config);

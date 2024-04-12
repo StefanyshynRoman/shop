@@ -39,18 +39,18 @@ public class AuthController {
     public ResponseEntity<?> autoLogin(HttpServletResponse response, HttpServletRequest request) {
         return userService.loginByToken(request, response);
     }
-
+    @CrossOrigin(origins = "http://localhost:4200")
     @RequestMapping(path = "/login", method = RequestMethod.POST)
     public ResponseEntity<?> login(@RequestBody User user, HttpServletResponse response) {
         log.info("--TRY LOGIN USER");
         return userService.login(response, user);
     }
-
+    @CrossOrigin(origins = "http://localhost:4200")
     @RequestMapping(path = "/logged-in", method = RequestMethod.GET)
     public ResponseEntity<?> loggedIn(HttpServletResponse response, HttpServletRequest request) {
         return userService.loggedIn(request, response);
     }
-
+    @CrossOrigin(origins = "http://localhost:4200")
     @RequestMapping(path = "/logout", method = RequestMethod.GET)
     public ResponseEntity<?> logout(HttpServletResponse response, HttpServletRequest request) {
         return userService.logout(request, response);
