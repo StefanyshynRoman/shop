@@ -5,19 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.0.16 auth_logout-fe">
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/guards/unauth.guard.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/guards/unauth.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/UserConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/UserConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/ResetOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/ResetOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/ResetPasswordData.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/ResetPasswordData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/ResetOperationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/ResetOperationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/fasada/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/fasada/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery/password-recovery.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery/password-recovery.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery/password-recovery.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery/password-recovery.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/auth-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/auth-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery-form/password-recovery-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery-form/password-recovery-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery-form/password-recovery-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery-form/password-recovery-form.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.actions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.effects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.effects.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/auth.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/auth.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/auth.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +115,7 @@
       <recent name="C:\Users\roman\IdeaProjects\shop" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthApplication ">
+  <component name="RunManager" selected="npm.start">
     <configuration name="mail-activ.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/shop/auth/src/main/resources/static/mail-activ.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -190,7 +195,7 @@
       <workItem from="1711390425029" duration="984000" />
       <workItem from="1711391437373" duration="713000" />
       <workItem from="1711462449785" duration="82321000" />
-      <workItem from="1712910262586" duration="9585000" />
+      <workItem from="1712910262586" duration="19527000" />
     </task>
     <task id="LOCAL-00001" summary="shop v0.0.1 init">
       <option name="closed" value="true" />
@@ -352,7 +357,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712913252174</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="shop v0.0.16 auth_logout-fe">
+      <option name="closed" value="true" />
+      <created>1713074742557</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1713074742557</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

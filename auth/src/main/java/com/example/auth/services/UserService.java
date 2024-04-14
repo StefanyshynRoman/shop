@@ -199,6 +199,8 @@ public class UserService {
         if (user != null) {
             ResetOperations resetOperations = resetOperationService.initResetOperation(user);
             emailService.sendPasswordRecovery(user, resetOperations.getUid());
+            log.error(resetOperations.getUid());
+            log.warn(user.toString());
             return;
         }
         throw new UserDontExistException("User dont exist");
@@ -207,10 +209,9 @@ public class UserService {
     @Transactional
     public void restPassword(ChangePasswordData changePasswordData) throws UserDontExistException {
         ResetOperations resetOperations = resetOperationsRepository.findByUid(changePasswordData.getUid()).orElse(null);
+        log.warn(resetOperations.getUid());
         if (resetOperations != null) {
-            User user = userRepository.findUserByUuid(changePasswordData.getUid()).orElse(null);
-
-
+            User user = userRepository.findUserByUuid(resetOperations.getUser().getUuid()).orElse(null);
             if (user != null) {
                 user.setPassword(changePasswordData.getPassword());
                 saveUser(user);

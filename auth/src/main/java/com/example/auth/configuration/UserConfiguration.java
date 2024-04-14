@@ -37,23 +37,6 @@ public class UserConfiguration {
         return new CustomUserDetailsService(userRepository);
     }
 
-    //    @Bean
-//    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-//        return http.csrf().disable()
-//                .authorizeHttpRequests()
-//                .requestMatchers("/api/v1/auth/register").permitAll()
-//                .requestMatchers(
-//                        "/api/v1/auth/register",
-//                        "/api/v1/auth/login",
-//                        "/api/v1/auth/validate",
-//                        "/api/v1/auth/reset-password",
-//                        "/api/v1/auth/activate"
-//
-//                )
-//                .permitAll()
-//                .and()
-//                .build();
-//    }
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http.csrf().disable()

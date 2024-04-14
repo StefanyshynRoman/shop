@@ -31,3 +31,6 @@ export interface ChangePasswordData {
   password: string;
   uid: string;
 }
+export interface LoggedInResponse extends Omit<AuthResponse, 'message'> {
+  message: boolean;
+}

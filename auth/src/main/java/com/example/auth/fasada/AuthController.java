@@ -39,17 +39,20 @@ public class AuthController {
     public ResponseEntity<?> autoLogin(HttpServletResponse response, HttpServletRequest request) {
         return userService.loginByToken(request, response);
     }
+
     @CrossOrigin(origins = "http://localhost:4200")
     @RequestMapping(path = "/login", method = RequestMethod.POST)
     public ResponseEntity<?> login(@RequestBody User user, HttpServletResponse response) {
         log.info("--TRY LOGIN USER");
         return userService.login(response, user);
     }
+
     @CrossOrigin(origins = "http://localhost:4200")
     @RequestMapping(path = "/logged-in", method = RequestMethod.GET)
     public ResponseEntity<?> loggedIn(HttpServletResponse response, HttpServletRequest request) {
         return userService.loggedIn(request, response);
     }
+
     @CrossOrigin(origins = "http://localhost:4200")
     @RequestMapping(path = "/logout", method = RequestMethod.GET)
     public ResponseEntity<?> logout(HttpServletResponse response, HttpServletRequest request) {
@@ -81,24 +84,31 @@ public class AuthController {
     @RequestMapping(path = "/reset-password", method = RequestMethod.POST)
     public ResponseEntity<AuthResponse> sendMailRecovery(@RequestBody ResetPasswordData resetPasswordData) {
         try {
+            log.info("--START sendMailRecovery");
             userService.recoveryPassword(resetPasswordData.getEmail());
+            log.info("--STOP sendMailRecovery");
             return ResponseEntity.ok(new AuthResponse(Code.SUCCESS));
-
         } catch (UserDontExistException e) {
+            log.info("User dont exist in database");
             return ResponseEntity.status(400).body(new AuthResponse(Code.A6));
         }
     }
 
-    @RequestMapping(path = "/reset-password", method = RequestMethod.PATCH)
-    public ResponseEntity<AuthResponse> recoveryMail(@RequestBody ChangePasswordData changePasswordData) {
-        try {
+
+    @RequestMapping(path = "/reset-password",method = RequestMethod.PATCH)
+    public ResponseEntity<AuthResponse> recoveryMail(@RequestBody ChangePasswordData changePasswordData){
+        try{
+            log.info("--START recoveryMail");
             userService.restPassword(changePasswordData);
+            log.info("--STOP recoveryMail");
             return ResponseEntity.ok(new AuthResponse(Code.SUCCESS));
-
-        } catch (UserDontExistException e) {
+        }catch (UserDontExistException e){
+            log.info("User dont exist in database");
             return ResponseEntity.status(400).body(new AuthResponse(Code.A6));
         }
     }
+
+
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)

@@ -312,3 +312,7 @@ w
 Gshop-fe/src/app/modules/core/interceptors/error-handling.interceptor.ts,2\1\2187a9d1c4eb1c3e9fbbe4f7bc544beb2449510d
 |
 Lshop-fe/src/app/modules/core/interceptors/error-handling.interceptor.spec.ts,7\5\758f36a202fb880d0b3483315f4a5c399367263e
+c
+3shop-fe/src/app/modules/core/guards/unauth.guard.ts,8\e\8ec893c0ade59c2ca2ccc0ba89e2f94905c1697e
+h
+8shop-fe/src/app/modules/core/guards/unauth.guard.spec.ts,5\0\50e2e11551920c4c68d93db2ebdc3626dcb22409
