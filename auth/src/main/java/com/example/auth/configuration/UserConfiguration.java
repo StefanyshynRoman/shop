@@ -37,7 +37,7 @@ public class UserConfiguration {
         return new CustomUserDetailsService(userRepository);
     }
 
-//    @Bean
+    //    @Bean
 //    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 //        return http.csrf().disable()
 //                .authorizeHttpRequests()
@@ -54,25 +54,28 @@ public class UserConfiguration {
 //                .and()
 //                .build();
 //    }
-@Bean
-public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-    return http.csrf().disable()
-            .authorizeHttpRequests()
-            .requestMatchers("/api/v1/auth/register").permitAll()
-            .requestMatchers(
-                    "/api/v1/auth/register",
-                    "/api/v1/auth/login",
-                    "/api/v1/auth/validate",
-                    "/api/v1/auth/reset-password",
-                    "/api/v1/auth/activate"
-            )
-            .permitAll()
-            .and()
-            .httpBasic()
-            .and()
-            .addFilterBefore(corsFilter(), ChannelProcessingFilter.class)
-            .build();
-}
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        return http.csrf().disable()
+                .authorizeHttpRequests()
+                .requestMatchers("/api/v1/auth/register").permitAll()
+                .requestMatchers("/api/v1/auth/register",
+                        "/api/v1/auth/login",
+                        "/api/v1/auth/validate",
+                        "/api/v1/auth/reset-password",
+                        "/api/v1/auth/activate",
+                        "/api/v1/auth/logout",
+                        "/api/v1/auth/auto-login",
+                        "/api/v1/auth/logged-in",
+                        "/api/v1/auth/authorize")
+                .permitAll()
+                .and()
+                .httpBasic()
+                .and()
+                .addFilterBefore(corsFilter(), ChannelProcessingFilter.class)
+                .build();
+    }
+
     @Bean
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();

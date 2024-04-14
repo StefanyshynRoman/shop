@@ -29,14 +29,13 @@ public class ResetOperationService {
         ResetOperations resetOperations = new ResetOperations();
 
         resetOperations.setUid(UUID.randomUUID().toString());
-        resetOperations.setCreateDate(new Timestamp(System.currentTimeMillis()).toString());
+        resetOperations.setCreateDate(new Timestamp(System.currentTimeMillis()));
         resetOperations.setUser(user);
 
         resetOperationsRepository.deleteAllByUser(user);
         log.info("--STOP initResetOperation");
         return resetOperationsRepository.saveAndFlush(resetOperations);
     }
-
     public void endOperation(String uid){
         resetOperationsRepository.findByUid(uid).ifPresent(resetOperationsRepository::delete);
     }

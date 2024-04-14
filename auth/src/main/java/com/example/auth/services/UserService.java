@@ -37,6 +37,8 @@ public class UserService {
     private final CookieService cookieService;
     private final ResetOperationService resetOperationService;
     private final ResetOperationsRepository resetOperationsRepository;
+
+
     @Value("${jwt.exp}")
     private int exp;
     @Value("${jwt.refresh.exp}")
@@ -158,9 +160,19 @@ public class UserService {
         }
     }
 
-    public ResponseEntity<?> logout(HttpServletRequest request, HttpServletResponse response) {
-        return null;
+    public ResponseEntity<?> logout(HttpServletRequest request, HttpServletResponse response){
+        log.info("Delete all cookies");
+        Cookie cookie = cookieService.removeCookie(request.getCookies(),"Authorization");
+        if (cookie != null){
+            response.addCookie(cookie);
+        }
+        cookie = cookieService.removeCookie(request.getCookies(),"refresh");
+        if (cookie != null){
+            response.addCookie(cookie);
+        }
+        return  ResponseEntity.ok(new AuthResponse(Code.SUCCESS));
     }
+
 
     public void setAsAdmin(UserRegisterDTO user) {
         userRepository.findUserByLogin(user.getLogin()).ifPresent(value -> {

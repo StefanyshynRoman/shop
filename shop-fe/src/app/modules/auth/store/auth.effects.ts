@@ -23,6 +23,24 @@ export class AuthEffects {
       }),
     );
   });
+  logout$ = createEffect(() => {
+    return this.actions$.pipe(
+      ofType(AuthActions.logout),
+      switchMap(() => {
+        return this.authService.logout().pipe(
+          map(() => {
+            this.router.navigate(['/logowanie']);
+            this.notifierService.notify('success', 'Wylogowano sie!');
+            return AuthActions.logoutSuccess();
+          }),
+          catchError((err) => {
+            this.notifierService.notify('warning', err);
+            return of(AuthActions.logoutFailure());
+          }),
+        );
+      }),
+    );
+  });
   register$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(AuthActions.register),

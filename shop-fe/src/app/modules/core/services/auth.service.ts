@@ -25,7 +25,9 @@ export class AuthService {
     });
   }
   logout(): Observable<AuthResponse> {
-    return this.http.get<AuthResponse>(`${this.apiUrl}/logout`);
+    return this.http.get<AuthResponse>(`${this.apiUrl}/logout`, {
+      withCredentials: true,
+    });
   }
   register(body: RegisterData): Observable<AuthResponse> {
     return this.http.post<AuthResponse>(`${this.apiUrl}/register`, body);
