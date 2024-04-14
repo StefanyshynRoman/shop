@@ -3,6 +3,7 @@ package com.exemple.gatway.filter;
 
 import com.exemple.gatway.config.Carousel;
 import com.exemple.gatway.utils.JwtUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
@@ -18,6 +19,7 @@ import java.sql.Timestamp;
 import java.util.List;
 
 @Component
+@Slf4j
 public class AuthenticationFilter extends AbstractGatewayFilterFactory<AuthenticationFilter.Config> {
 
     private final RouteValidator validator;
@@ -38,6 +40,7 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
     @Override
     public GatewayFilter apply(Config config) {
         return ((exchange, chain) -> {
+            log.info("--START GatewayFilter");
             if (validator.isSecure.test((ServerHttpRequest) exchange.getRequest())) {
                 if (!exchange.getRequest().getCookies().containsKey(HttpHeaders.AUTHORIZATION) && !exchange.getRequest().getCookies().containsKey("refresh")) {
                     exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
@@ -58,8 +61,10 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
 
                 HttpCookie authCookie = exchange.getRequest().getCookies().get(HttpHeaders.AUTHORIZATION).get(0);
                 HttpCookie refreshCookie = exchange.getRequest().getCookies().get("refresh").get(0);
+                log.info("--START validate Token");
                 try {
                     if (activeProfile.equals("test")) {
+                        log.debug("Init self auth methods (only for tests");
                         jwtUtil.validateToken(authCookie.getValue());
                     } else {
                         String cookies = new StringBuilder()
@@ -92,11 +97,15 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
                                 }
                             }
                         }
+                        log.info("Successful login");
                     }
                 } catch (Exception e) {
+                    log.warn("Cannot login bad token");
                     exchange.getResponse().writeWith(Flux.just(new DefaultDataBufferFactory().wrap(e.getMessage().getBytes())));
                 }
             }
+            log.info("--Stop validate token");
+            log.info("--Stop GatewayFilter");
             return chain.filter(exchange);
         });
     }

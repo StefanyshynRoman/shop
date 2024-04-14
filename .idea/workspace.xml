@@ -4,26 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.0.16 auth_logout-fe">
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/guards/unauth.guard.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/guards/unauth.guard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.0.16 auth_autologin-fe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/UserConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/UserConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/fasada/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/fasada/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/auth-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/auth-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery-form/password-recovery-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery-form/password-recovery-form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery-form/password-recovery-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/components/password-recovery-form/password-recovery-form.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.effects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.effects.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/auth/store/auth.reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/auth.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/auth.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/config/Carousel.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/config/Carousel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/filter/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/filter/AuthenticationFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +179,7 @@
       <workItem from="1711390425029" duration="984000" />
       <workItem from="1711391437373" duration="713000" />
       <workItem from="1711462449785" duration="82321000" />
-      <workItem from="1712910262586" duration="19527000" />
+      <workItem from="1712910262586" duration="20971000" />
     </task>
     <task id="LOCAL-00001" summary="shop v0.0.1 init">
       <option name="closed" value="true" />
@@ -365,7 +349,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713074742557</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="shop v0.0.16 auth_autologin-fe">
+      <option name="closed" value="true" />
+      <created>1713088122316</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1713088122316</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +398,8 @@
     <MESSAGE value="shop v0.0.14 auth_intercept-fe" />
     <MESSAGE value="shop v0.0.15 auth_login-fe" />
     <MESSAGE value="shop v0.0.16 auth_logout-fe" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop v0.0.16 auth_logout-fe" />
+    <MESSAGE value="shop v0.0.16 auth_autologin-fe" />
+    <option name="LAST_COMMIT_MESSAGE" value="shop v0.0.16 auth_autologin-fe" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
