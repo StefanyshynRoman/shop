@@ -336,3 +336,17 @@ D
 product-service/mvnw,3\4\344447d942ad563e5dc5e0b328e001456deeb3ce
 e
 5product-service/.mvn/wrapper/maven-wrapper.properties,1\6\16fcc8277e6cacfe8a9e56c64fc67764bf47be71
+
+Oproduct-service/src/main/java/com/example/productservice/entity/ProductDto.java,8\9\898619588fdbd8aef6be7321000cd1c57a222d52
+‚
+Rproduct-service/src/main/java/com/example/productservice/entity/ProductEntity.java,2\0\20869ce57a1b126c63b87eeab4ffef9ef94290f1
+}
+Mproduct-service/src/main/java/com/example/productservice/entity/Category.java,3\8\38bbc6f3ef970e7ff11bb9f4970e7d757c5a8648
+€
+Pproduct-service/src/main/java/com/example/productservice/entity/CategoryDTO.java,2\a\2af57185783d9c8acaecf59c32232a1b7c2ff573
+‹
+[product-service/src/main/java/com/example/productservice/repository/CategoryRepository.java,8\8\88889456d132c3d34d1040fca87e3f670e0f1cc6
+Š
+Zproduct-service/src/main/java/com/example/productservice/repository/ProductRepository.java,c\9\c972d6b3b3455666603acbfcb7edc8e2af387cdc
+†
+Vproduct-service/src/main/java/com/example/productservice/fasada/ProductController.java,2\6\26706a33f222e5f1afa500fbaf7ad93b19bb1e85
