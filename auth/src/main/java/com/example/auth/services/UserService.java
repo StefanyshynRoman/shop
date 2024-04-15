@@ -65,6 +65,7 @@ public class UserService {
                 }
             }
         } else {
+            log.info("Can't login because in token is empty");
             throw new IllegalArgumentException("Token can't be null");
         }
 
@@ -83,9 +84,11 @@ public class UserService {
 
     public void register(UserRegisterDTO userRegisterDTO) throws UserExistingWithName, UserExistingWithMail {
         userRepository.findUserByLogin(userRegisterDTO.getLogin()).ifPresent(value -> {
+            log.info("Users already exist with this name");
             throw new UserExistingWithName("User with this name is present");
         });
         userRepository.findUserByEmail(userRegisterDTO.getEmail()).ifPresent(value -> {
+            log.info("Users already exist with this mail");
             throw new UserExistingWithMail("User with this email is present");
         });
         User user = new User();
@@ -120,7 +123,7 @@ public class UserService {
                 return ResponseEntity.ok(new AuthResponse(Code.A1));
             }
         }
-        log.info("User dont exist");
+        log.info("User don't exist");
         log.info("--STOP LoginService");
         return ResponseEntity.ok(new AuthResponse(Code.A2));
     }
@@ -154,23 +157,25 @@ public class UserService {
                                 .role(user.getRole())
                                 .build());
             }
+            log.info("Can't login user don't exist");
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(new AuthResponse(Code.A1));
         } catch (ExpiredJwtException | IllegalArgumentException e) {
+            log.info("Can't login user expired or null");
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(new AuthResponse(Code.A3));
         }
     }
 
-    public ResponseEntity<?> logout(HttpServletRequest request, HttpServletResponse response){
+    public ResponseEntity<?> logout(HttpServletRequest request, HttpServletResponse response) {
         log.info("Delete all cookies");
-        Cookie cookie = cookieService.removeCookie(request.getCookies(),"Authorization");
-        if (cookie != null){
+        Cookie cookie = cookieService.removeCookie(request.getCookies(), "Authorization");
+        if (cookie != null) {
             response.addCookie(cookie);
         }
-        cookie = cookieService.removeCookie(request.getCookies(),"refresh");
-        if (cookie != null){
+        cookie = cookieService.removeCookie(request.getCookies(), "refresh");
+        if (cookie != null) {
             response.addCookie(cookie);
         }
-        return  ResponseEntity.ok(new AuthResponse(Code.SUCCESS));
+        return ResponseEntity.ok(new AuthResponse(Code.SUCCESS));
     }
 
 
@@ -182,8 +187,6 @@ public class UserService {
     }
 
     public void activateUser(String uid) throws UserDontExistException {
-        log.info("rrrrrrrrrrr", new String[]{uid});
-        log.info(uid);
         User user = userRepository.findUserByUuid(uid).orElse(null);
         if (user != null) {
             user.setLock(false);

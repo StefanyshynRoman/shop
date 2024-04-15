@@ -26,17 +26,22 @@ public class AuthController {
     @RequestMapping(path = "/register", method = RequestMethod.POST)
     public ResponseEntity<AuthResponse> addNewUser(@Valid @RequestBody UserRegisterDTO user) {
         try {
+            log.info("--START REGISTER USER");
             userService.register(user);
+            log.info("--STOP REGISTER USER");
             return ResponseEntity.ok(new AuthResponse(Code.SUCCESS));
         } catch (UserExistingWithName e) {
+            log.info("--User dont exist in database");
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new AuthResponse(Code.A4));
         } catch (UserExistingWithMail existing) {
+            log.info("--User dont exist in database with this mail");
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new AuthResponse(Code.A5));
         }
     }
 
     @RequestMapping(path = "/auto-login", method = RequestMethod.GET)
     public ResponseEntity<?> autoLogin(HttpServletResponse response, HttpServletRequest request) {
+        log.info("--TRY AUTO-LOGIN USER");
         return userService.loginByToken(request, response);
     }
 
@@ -50,21 +55,26 @@ public class AuthController {
     @CrossOrigin(origins = "http://localhost:4200")
     @RequestMapping(path = "/logged-in", method = RequestMethod.GET)
     public ResponseEntity<?> loggedIn(HttpServletResponse response, HttpServletRequest request) {
+        log.info("--CHECK USER LOGGED-IN");
         return userService.loggedIn(request, response);
     }
 
     @CrossOrigin(origins = "http://localhost:4200")
     @RequestMapping(path = "/logout", method = RequestMethod.GET)
     public ResponseEntity<?> logout(HttpServletResponse response, HttpServletRequest request) {
+        log.info("--TRY LOGOUT USER");
         return userService.logout(request, response);
     }
 
     @RequestMapping(path = "/validate", method = RequestMethod.GET)
     public ResponseEntity<AuthResponse> validateToken(HttpServletRequest request, HttpServletResponse response) {
         try {
+            log.info("--START validateToken");
             userService.validateToken(request, response);
+            log.info("--STOP validateToken");
             return ResponseEntity.ok(new AuthResponse(Code.PERMIT));
         } catch (IllegalArgumentException | ExpiredJwtException e) {
+            log.info("--Token is not correct");
             return ResponseEntity.status(401).body(new AuthResponse(Code.A3));
         }
     }
@@ -72,11 +82,12 @@ public class AuthController {
     @RequestMapping(path = "/activate", method = RequestMethod.GET)
     public ResponseEntity<AuthResponse> activateUser(@RequestParam String uid) {
         try {
+            log.info("START activateUser ");
             userService.activateUser(uid);
-            log.info(uid);
+            log.info("STOP activateUser ");
             return ResponseEntity.ok(new AuthResponse(Code.SUCCESS));
         } catch (UserDontExistException e) {
-            log.info("ddddddddddddddddddddddddddddd");
+            log.info("User don't exist in database");
             return ResponseEntity.status(400).body(new AuthResponse(Code.A6));
         }
     }
