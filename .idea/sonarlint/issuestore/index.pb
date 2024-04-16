@@ -350,3 +350,9 @@ Pproduct-service/src/main/java/com/example/productservice/entity/CategoryDTO.jav
 Zproduct-service/src/main/java/com/example/productservice/repository/ProductRepository.java,c\9\c972d6b3b3455666603acbfcb7edc8e2af387cdc
 †
 Vproduct-service/src/main/java/com/example/productservice/fasada/ProductController.java,2\6\26706a33f222e5f1afa500fbaf7ad93b19bb1e85
+†
+Vproduct-service/src/main/java/com/example/productservice/mediator/ProductMediator.java,a\9\a9dd2a3d4b691cd33781bea71f9d930c2d295175
+„
+Tproduct-service/src/main/java/com/example/productservice/service/ProductService.java,b\d\bd579df397003af54a54e6e741b69cffa6070a6f
+
+Oproduct-service/src/main/java/com/example/productservice/entity/ProductDTO.java,5\c\5c2ad9a8c89b38a5397b473c8f9b94a0f97936ea
