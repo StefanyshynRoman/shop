@@ -49,7 +49,7 @@ public class ProductMediator {
             product.forEach(value -> {
                 simpleProductDTOS.add(productEntityToSimpleProduct.toSimpleProduct(value));
             });
-            return ResponseEntity.ok().header("X-Total-Count", String.valueOf(totalCount)).body(product);
+            return ResponseEntity.ok().header("X-Total-Count", String.valueOf(totalCount)).body(simpleProductDTOS);
         }
         return ResponseEntity.ok().body(product);
     }

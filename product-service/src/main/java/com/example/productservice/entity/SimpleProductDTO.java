@@ -14,7 +14,6 @@ public class SimpleProductDTO {
     private String name;
     private String mainDesc;
     private float price;
-    private String imageUrls;
+    private String imageUrl;
     private LocalDate createAt;
-
 }
