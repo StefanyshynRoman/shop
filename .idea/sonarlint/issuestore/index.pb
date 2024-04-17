@@ -356,3 +356,7 @@ Vproduct-service/src/main/java/com/example/productservice/mediator/ProductMediat
 Tproduct-service/src/main/java/com/example/productservice/service/ProductService.java,b\d\bd579df397003af54a54e6e741b69cffa6070a6f
 
 Oproduct-service/src/main/java/com/example/productservice/entity/ProductDTO.java,5\c\5c2ad9a8c89b38a5397b473c8f9b94a0f97936ea
+…
+Uproduct-service/src/main/java/com/example/productservice/entity/SimpleProductDTO.java,9\3\93d10df1451f999c3adf955dacfe0bec798f96c7
+•
+eproduct-service/src/main/java/com/example/productservice/translator/ProductEntityToSimpleProduct.java,f\a\fa58a85dd07239f22ed364d7972e77bb102cb17c

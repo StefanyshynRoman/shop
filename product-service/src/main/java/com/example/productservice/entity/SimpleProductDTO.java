@@ -1,29 +1,20 @@
 package com.example.productservice.entity;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
-
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
-@MappedSuperclass
-public class Product {
-
-    private String uid;
-    private boolean activate;
-    @Column(name = "product_name")
+@NoArgsConstructor
+public class SimpleProductDTO {
     private String name;
     private String mainDesc;
-    private String descHtml;
     private float price;
-    private String[] imageUrls;
-    private String parameters;
+    private String imageUrls;
     private LocalDate createAt;
 
 }

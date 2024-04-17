@@ -1,6 +1,6 @@
 package com.example.productservice.entity;
 
 public class ProductDTO extends Product{
-    private long categoryID;
+    private String categoryShortId;
 
 }
