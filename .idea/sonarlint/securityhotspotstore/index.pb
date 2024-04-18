@@ -360,3 +360,13 @@ Oproduct-service/src/main/java/com/example/productservice/entity/ProductDTO.java
 Uproduct-service/src/main/java/com/example/productservice/entity/SimpleProductDTO.java,9\3\93d10df1451f999c3adf955dacfe0bec798f96c7
 •
 eproduct-service/src/main/java/com/example/productservice/translator/ProductEntityToSimpleProduct.java,f\a\fa58a85dd07239f22ed364d7972e77bb102cb17c
+’
+bproduct-service/src/main/java/com/example/productservice/translator/ProductEntityToProductDTO.java,3\4\34bfc72bb8016fdfae84f294e7b88f9d799eb4ed
+‡
+Wproduct-service/src/main/java/com/example/productservice/fasada/CategoryController.java,0\2\02a64f1938ddb7a51567163bc9061a6345f5dd85
+‡
+Wproduct-service/src/main/java/com/example/productservice/mediator/CategoryMediator.java,0\0\0003290621f2092d0c8ed591c191560048a043c5
+…
+Uproduct-service/src/main/java/com/example/productservice/service/CategoryService.java,6\6\66201bd0a6e039e4456b17bfea533bf2d11db40e
+Ž
+^product-service/src/main/java/com/example/productservice/translator/CategoryToCategoryDTO.java,7\1\71a0f4fee35c091b06890664c8ade74c99b5a98e
