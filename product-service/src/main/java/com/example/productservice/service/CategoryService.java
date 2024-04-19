@@ -2,6 +2,7 @@ package com.example.productservice.service;
 
 import com.example.productservice.entity.Category;
 import com.example.productservice.entity.CategoryDTO;
+import com.example.productservice.exception.ObjectExistInDBException;
 import com.example.productservice.repository.CategoryRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -18,13 +19,13 @@ public class CategoryService {
         return categoryRepository.findAll();
     }
 
-    public void create(CategoryDTO categoryDTO) throws RuntimeException {
+    public void create(CategoryDTO categoryDTO) throws ObjectExistInDBException {
         Category category = new Category();
         category.setName(categoryDTO.getName());
         category.setShortId(UUID.randomUUID().toString().replace("-", "").substring(0, 12));
 
         categoryRepository.findByName(category.getName()).ifPresent(value -> {
-            throw new RuntimeException();
+            throw new ObjectExistInDBException("Category exist in DB with this name");
         });
         categoryRepository.save(category);
     }
