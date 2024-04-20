@@ -4,15 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.1.04 category_be">
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/entity/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/exception/ObjectExistInDBException.java" afterDir="false" />
+    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.2.01 fileservis_be">
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/entity/ImageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/entity/ImageEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/entity/ImageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/exception/FtpConnectionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/fassada/ImageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/mediator/MediatorImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/repository/ImageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/service/FtpService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/service/ImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/resources/db/migration/V20__InitTables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/fasada/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/fasada/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/mediator/CategoryMediator.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/mediator/CategoryMediator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/FileserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/FileServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,12 +79,13 @@
     "Spring Boot.AuthApplication .executor": "Run",
     "Spring Boot.AuthApplication.executor": "Run",
     "Spring Boot.EurekaApplication.executor": "Run",
+    "Spring Boot.FileServiceApplication.executor": "Run",
     "Spring Boot.GatwayApplication.executor": "Run",
     "Spring Boot.ProductServiceApplication.executor": "Run",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "graalvm-ce-17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/roman/IdeaProjects/shop/product-service",
+    "last_opened_file_path": "C:/Users/roman/IdeaProjects/shop/fileservice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -98,6 +111,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.fileservice.service" />
       <recent name="com.example.productservice.service" />
       <recent name="com.example.productservice.mediator" />
       <recent name="com.exemple.auth.entity" />
@@ -110,7 +124,7 @@
       <recent name="C:\Users\roman\IdeaProjects\shop\" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
+  <component name="RunManager" selected="Spring Boot.FileServiceApplication">
     <configuration name="mail-activ.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/shop/auth/src/main/resources/static/mail-activ.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -132,6 +146,13 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="eureka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.exemple.eureka.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="fileservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.fileservice.FileServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -165,6 +186,7 @@
     <list>
       <item itemvalue="JavaScript Debug.mail-activ.html" />
       <item itemvalue="npm.start" />
+      <item itemvalue="Spring Boot.FileServiceApplication" />
       <item itemvalue="Spring Boot.ProductServiceApplication" />
       <item itemvalue="Spring Boot.GatwayApplication" />
       <item itemvalue="Spring Boot.EurekaApplication" />
@@ -198,7 +220,7 @@
       <workItem from="1711390425029" duration="984000" />
       <workItem from="1711391437373" duration="713000" />
       <workItem from="1711462449785" duration="82321000" />
-      <workItem from="1712910262586" duration="49945000" />
+      <workItem from="1712910262586" duration="56753000" />
     </task>
     <task id="LOCAL-00001" summary="shop v0.0.1 init">
       <option name="closed" value="true" />
@@ -432,7 +454,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713434176376</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="shop v0.2.01 fileservis_be">
+      <option name="closed" value="true" />
+      <created>1713507092429</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1713507092429</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +484,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="shop v0.0.3 auth" />
     <MESSAGE value="shop v0.0.4 auth" />
     <MESSAGE value="shop v0.0.5 auth_gat_way" />
     <MESSAGE value="shop v0.0.5 auth_config" />
@@ -479,7 +508,8 @@
     <MESSAGE value="shop v0.1.03 maper_be" />
     <MESSAGE value="shop v0.1.04 maper_be" />
     <MESSAGE value="shop v0.1.04 category_be" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop v0.1.04 category_be" />
+    <MESSAGE value="shop v0.2.01 fileservis_be" />
+    <option name="LAST_COMMIT_MESSAGE" value="shop v0.2.01 fileservis_be" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
