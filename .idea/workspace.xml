@@ -4,20 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.2.02 ftp_be">
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/entity/ProductFormDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/exception/CategoryDontExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/translator/ProductFormToProductEntity.java" afterDir="false" />
+    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.2.02 image_product_be">
+      <change afterPath="$PROJECT_DIR$/RegisterEndpointInformation/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RegisterEndpointInformation/src/main/java/org/example/ApiGatewayEndpointConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RegisterEndpointInformation/src/main/java/org/example/entity/Endpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RegisterEndpointInformation/src/main/java/org/example/entity/HttpMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RegisterEndpointInformation/src/main/java/org/example/entity/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RegisterEndpointInformation/src/main/java/org/example/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/configuration/ApiGatewayEndpointConfigurationImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/fassada/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/fassada/ImageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/mediator/MediatorImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/mediator/MediatorImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/repository/ImageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/repository/ImageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/service/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/service/ImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/fasada/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/fasada/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gatway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/mediator/ProductMediator.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/mediator/ProductMediator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/repository/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -29,9 +35,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="TypeScript File" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -230,7 +236,7 @@
       <workItem from="1711390425029" duration="984000" />
       <workItem from="1711391437373" duration="713000" />
       <workItem from="1711462449785" duration="82321000" />
-      <workItem from="1712910262586" duration="63753000" />
+      <workItem from="1712910262586" duration="68341000" />
     </task>
     <task id="LOCAL-00001" summary="shop v0.0.1 init">
       <option name="closed" value="true" />
@@ -480,7 +486,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713603843556</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="shop v0.2.02 image_product_be">
+      <option name="closed" value="true" />
+      <created>1713713736066</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1713713736066</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,7 +516,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="shop v0.0.5 auth_config" />
     <MESSAGE value="shop v0.0.5 auth_config_enable" />
     <MESSAGE value="shop v0.0.6 auth_send_mail" />
     <MESSAGE value="shop v0.0.7 auth_reset_password" />
@@ -527,7 +540,8 @@
     <MESSAGE value="shop v0.2.01 fileservis_be" />
     <MESSAGE value="shop v0.2.01 ftp_be" />
     <MESSAGE value="shop v0.2.02 ftp_be" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop v0.2.02 ftp_be" />
+    <MESSAGE value="shop v0.2.02 image_product_be" />
+    <option name="LAST_COMMIT_MESSAGE" value="shop v0.2.02 image_product_be" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

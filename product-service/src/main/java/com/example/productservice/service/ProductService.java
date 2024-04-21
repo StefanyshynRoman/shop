@@ -11,6 +11,7 @@ import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.client.RestTemplate;
 
 
 import java.io.IOException;
@@ -22,6 +23,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -152,6 +154,28 @@ public class ProductService {
         } catch (IOException | InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @Transactional
+    public void delete(String uuid) throws RuntimeException {
+        productRepository.findByUid(uuid).ifPresentOrElse(value -> {
+            value.setActivate(false);
+            productRepository.save(value);
+            for (String image : value.getImageUrls()) {
+                deleteImages(image);
+            }
+        }, () -> {
+            throw new RuntimeException();
+        });
+    }
+
+    private void deleteImages(String uuid) {
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.delete(FILE_SERVICE + "?uuid=" + uuid);
+    }
+
+    public Optional<ProductEntity> getProductByUuid(String uuid) {
+        return productRepository.findByUid(uuid);
     }
 
 }

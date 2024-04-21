@@ -10,6 +10,7 @@ import com.example.productservice.translator.ProductFormToProductEntity;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
@@ -24,12 +25,22 @@ public class ProductMediator {
     private final ProductEntityToProductDTO productEntityToProductDTO;
     private final ProductFormToProductEntity formToProductEntity;
     private final CategoryService categoryService;
+    @Value("${file-service.url}")
+    private String FILE_SERVICE;
 
 
     public ResponseEntity<?> getProduct(int page, int limit, String name,
                                         String category, Float price_min,
                                         Float price_max, String data,
                                         String sort, String order) {
+
+        if (name != null && !name.isEmpty()) {
+            try {
+                name = URLDecoder.decode(name, "UTF-8");
+            } catch (UnsupportedEncodingException e) {
+                throw new RuntimeException(e);
+            }
+        }
         List<ProductEntity> product = productService
                 .getProduct(
                         name,
@@ -42,13 +53,11 @@ public class ProductMediator {
                         sort,
                         order
                 );
-//        if (name != null && !name.isEmpty()) {
-//            try {
-//                name = URLDecoder.decode(name, "UTF-8");
-//            } catch (UnsupportedEncodingException e) {
-//                throw new RuntimeException(e);
-//            }
-//        }
+        product.forEach(value->{
+            for (int i = 0; i < value.getImageUrls().length; i++) {
+                value.getImageUrls()[i]=FILE_SERVICE+"?uuid="+value.getImageUrls()[i];
+            }
+        });
         if (name == null || name.isEmpty() || data == null || data.isEmpty()) {
             List<SimpleProductDTO> simpleProductDTOS = new ArrayList<>();
             long totalCount = productService.countActiveProducts(name, category, price_min, price_max);
@@ -76,7 +85,12 @@ public class ProductMediator {
     }
 
     public ResponseEntity<Response> deleteProduct(String uuid) {
-        return null;
+        try {
+            productService.delete(uuid);
+            return ResponseEntity.ok(new Response("Successful delete product"));
+        } catch (RuntimeException e) {
+            return ResponseEntity.status(400).body(new Response("Product dont exist(delete"));
+        }
     }
 }
 
