@@ -408,3 +408,9 @@ Ffileservice/src/main/java/com/example/fileservice/entity/ImageDTO.java,a\7\a7e
 Kfileservice/src/main/java/com/example/fileservice/entity/ImageResponse.java,8\2\82bee186441ca5d168e8bb9760431cb330271d74
 ‡
 Wfileservice/src/main/java/com/example/fileservice/exception/FtpConnectionException.java,f\4\f4777ad494eb6f325160ddcb55a6cffe466b4837
+ƒ
+Sproduct-service/src/main/java/com/example/productservice/entity/ProductFormDTO.java,a\1\a1bef53061f2788669f71818827f52c626c4ffe2
+“
+cproduct-service/src/main/java/com/example/productservice/translator/ProductFormToProductEntity.java,8\6\8627a3342cb449ed267ac56daa5cdd27af5f2176
+’
+bproduct-service/src/main/java/com/example/productservice/exception/CategoryDontExistException.java,4\4\44cf9922de7baf75f3ef762e3d970268f8898738
