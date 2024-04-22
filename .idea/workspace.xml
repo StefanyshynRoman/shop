@@ -4,33 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.2.02 image_product_be">
-      <change afterPath="$PROJECT_DIR$/RegisterEndpointInformation/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RegisterEndpointInformation/src/main/java/org/example/ApiGatewayEndpointConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RegisterEndpointInformation/src/main/java/org/example/entity/Endpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RegisterEndpointInformation/src/main/java/org/example/entity/HttpMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RegisterEndpointInformation/src/main/java/org/example/entity/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RegisterEndpointInformation/src/main/java/org/example/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/configuration/ApiGatewayEndpointConfigurationImpl.java" afterDir="false" />
+    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.2.04 regis_be">
+      <change afterPath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/fasada/RegistrationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/fasada/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/fasada/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/FileServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/FileServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/configuration/ApiGatewayEndpointConfigurationImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/configuration/ApiGatewayEndpointConfigurationImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gatway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/filter/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/filter/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/filter/RouteValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/filter/RouteValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gatway/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/mediator/ProductMediator.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/mediator/ProductMediator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/ProductServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/configuration/ApiGatewayEndpointConfigurationImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/configuration/ApiGatewayEndpointConfigurationImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -100,7 +100,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "graalvm-ce-17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/roman/IdeaProjects/shop/fileservice",
+    "last_opened_file_path": "C:/Users/roman/IdeaProjects/shop/fileservice/src/main/java/com/example/fileservice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -114,7 +114,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "ts.external.directory.path": "C:\\Users\\roman\\IdeaProjects\\shop\\shop-fe\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -133,6 +133,7 @@
       <recent name="com.exemple.auth.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\roman\IdeaProjects\shop\fileservice\src\main\java\com\example\fileservice" />
       <recent name="C:\Users\roman\IdeaProjects\shop\shop-fe\src\app\modules\auth\components" />
       <recent name="C:\Users\roman\IdeaProjects\shop" />
     </key>
@@ -140,7 +141,7 @@
       <recent name="C:\Users\roman\IdeaProjects\shop\" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.FileServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
     <configuration name="mail-activ.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/shop/auth/src/main/resources/static/mail-activ.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -236,7 +237,7 @@
       <workItem from="1711390425029" duration="984000" />
       <workItem from="1711391437373" duration="713000" />
       <workItem from="1711462449785" duration="82321000" />
-      <workItem from="1712910262586" duration="68341000" />
+      <workItem from="1712910262586" duration="75704000" />
     </task>
     <task id="LOCAL-00001" summary="shop v0.0.1 init">
       <option name="closed" value="true" />
@@ -494,7 +495,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713713736066</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="shop v0.2.04 regis_be">
+      <option name="closed" value="true" />
+      <created>1713718608183</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1713718608184</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,7 +525,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="shop v0.0.5 auth_config_enable" />
     <MESSAGE value="shop v0.0.6 auth_send_mail" />
     <MESSAGE value="shop v0.0.7 auth_reset_password" />
     <MESSAGE value="shop v0.0.8 auth_end_be" />
@@ -541,7 +549,8 @@
     <MESSAGE value="shop v0.2.01 ftp_be" />
     <MESSAGE value="shop v0.2.02 ftp_be" />
     <MESSAGE value="shop v0.2.02 image_product_be" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop v0.2.02 image_product_be" />
+    <MESSAGE value="shop v0.2.04 regis_be" />
+    <option name="LAST_COMMIT_MESSAGE" value="shop v0.2.04 regis_be" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

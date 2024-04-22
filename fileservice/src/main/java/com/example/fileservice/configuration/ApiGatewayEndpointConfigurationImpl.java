@@ -7,11 +7,12 @@ import org.example.entity.HttpMethod;
 import org.example.entity.Response;
 import org.example.entity.Role;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-@Component
+@Configuration
+
 public class ApiGatewayEndpointConfigurationImpl implements ApiGatewayEndpointConfiguration {
 
     @Value("${api-gateway.url}")

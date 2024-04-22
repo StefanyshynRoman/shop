@@ -432,3 +432,7 @@ FRegisterEndpointInformation/src/main/java/org/example/entity/Role.java,6\7\67c
 oproduct-service/src/main/java/com/example/productservice/configuration/ApiGatewayEndpointConfigurationImpl.java,d\7\d7fd063b54999d5418edcab55f73d89248e48801
 ˜
 hfileservice/src/main/java/com/example/fileservice/configuration/ApiGatewayEndpointConfigurationImpl.java,e\e\eeaf52ff30fdcd911e4d0168cbd29e08e13b1570
+z
+Jgatway/src/main/java/com/exemple/gatway/fasada/RegistrationController.java,7\9\79189459e1805570801a4024f3cd7e3700a6dce7
+l
+<gatway/src/main/java/com/exemple/gatway/entity/Endpoint.java,5\5\555e066a52ba080571611720b169450a998ce315
