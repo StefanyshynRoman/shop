@@ -462,3 +462,11 @@ Oshop-fe/src/app/modules/products/components/products/products.component.spec.ts
 Lshop-fe/src/app/modules/products/components/products/products.component.html,a\f\af029877abbd7c31c10aac7ebb55e4c80e42c43b
 i
 9shop-fe/src/app/modules/core/services/products.service.ts,1\f\1ffe0addc4d662252ff69e4531d5615a53ac48e7
+Å
+Qshop-fe/src/app/modules/products/components/products/product/product.component.ts,1\b\1bed195121c61c8c3270c145885d7528e0d3925b
+É
+Sshop-fe/src/app/modules/products/components/products/product/product.component.html,5\a\5ac9fdb4822df9b19ef6fb7bf36ddf00b0955cb8
+É
+Sshop-fe/src/app/modules/products/components/products/product/product.component.scss,9\7\975ea99241b072a42362d6eadf4ef86f69969586
+Ü
+Vshop-fe/src/app/modules/products/components/products/product/product.component.spec.ts,4\8\488b48350f2343ecff0d4ba4108501508ea2c175
