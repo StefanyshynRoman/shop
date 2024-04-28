@@ -4,7 +4,6 @@ import com.example.auth.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -65,7 +64,7 @@ public class UserConfiguration {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
         config.addAllowedOriginPattern("*://localhost:4200");
-        // config.addAllowedOrigin("*"); // Розрішити всі домени
+        //   config.addAllowedOrigin("*"); // Розрішити всі домени
         config.addAllowedMethod("*"); // Розрішити всі HTTP методи
         config.addAllowedHeader("*"); // Розрішити всі заголовки
         source.registerCorsConfiguration("/**", config);

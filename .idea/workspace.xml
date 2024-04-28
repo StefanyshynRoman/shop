@@ -4,19 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.3.0 produc_fe">
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product/product.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product/product.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product/product.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product/product.component.ts" afterDir="false" />
+    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.3.2 paginator_fe">
+      <change afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/configuration/CorsConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/configuration/CorsConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/material/mat-paginator-customs-intl.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/UserConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/UserConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/core.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/core.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/product.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/product.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/products.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/products.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product/product.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product/product.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product/product.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product/product.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/products.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/products.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/products.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/products.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/products.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/products.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/products.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/products.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/environments/environment.development.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/environments/environment.development.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/material.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +36,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="TypeScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -134,8 +139,12 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\roman\IdeaProjects\shop\" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.fileservice.configuration" />
+      <recent name="com.exemple.gatway.config" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="Spring Boot.AuthApplication ">
     <configuration name="mail-activ.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/shop/auth/src/main/resources/static/mail-activ.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -233,7 +242,7 @@
       <workItem from="1711462449785" duration="82321000" />
       <workItem from="1712910262586" duration="76246000" />
       <workItem from="1713810069318" duration="4727000" />
-      <workItem from="1714146501173" duration="2972000" />
+      <workItem from="1714146501173" duration="16807000" />
     </task>
     <task id="LOCAL-00001" summary="shop v0.0.1 init">
       <option name="closed" value="true" />
@@ -515,7 +524,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714066601756</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="shop v0.3.1 produc_fe">
+      <option name="closed" value="true" />
+      <created>1714150319049</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1714150319049</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,8 +554,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="shop v0.0.8 auth_end_be" />
-    <MESSAGE value="shop v0.0.8 auth_fe" />
     <MESSAGE value="shop v0.0.9 auth_controls-fe" />
     <MESSAGE value="shop v0.0.10 auth_controls-fe" />
     <MESSAGE value="shop v0.0.11 auth_service-fe" />
@@ -562,7 +577,9 @@
     <MESSAGE value="shop v0.2.04 regis_be" />
     <MESSAGE value="shop v0.2.7 start_be" />
     <MESSAGE value="shop v0.3.0 produc_fe" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop v0.3.0 produc_fe" />
+    <MESSAGE value="shop v0.3.1 produc_fe" />
+    <MESSAGE value="shop v0.3.2 paginator_fe" />
+    <option name="LAST_COMMIT_MESSAGE" value="shop v0.3.2 paginator_fe" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

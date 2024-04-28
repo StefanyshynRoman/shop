@@ -470,3 +470,13 @@ Sshop-fe/src/app/modules/products/components/products/product/product.component.
 Sshop-fe/src/app/modules/products/components/products/product/product.component.scss,9\7\975ea99241b072a42362d6eadf4ef86f69969586
 Ü
 Vshop-fe/src/app/modules/products/components/products/product/product.component.spec.ts,4\8\488b48350f2343ecff0d4ba4108501508ea2c175
+s
+Cshop-fe/src/app/modules/core/material/mat-paginator-customs-init.ts,2\7\27cd5d428264eac6216a35c5051da652bba4f95e
+s
+Cshop-fe/src/app/modules/core/material/mat-paginator-customs-intl.ts,e\9\e993a7966ef4be9c234c2cdfd1cfbf3bdd943ec6
+ç
+]product-service/src/main/java/com/example/productservice/configuration/CorsConfiguration.java,5\7\579e897e77772e399bcac097fcd7e645333d6e6b
+u
+Egatway/src/main/java/com/exemple/gatway/config/CorsConfiguration.java,e\f\efbfbbc2ba72918eae0a710bc014a53a82da0e2b
+Ü
+Vfileservice/src/main/java/com/example/fileservice/configuration/CorsConfiguration.java,c\3\c3961dee9cd62c851179355f95e9740765da85db
