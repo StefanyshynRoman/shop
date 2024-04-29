@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, ViewChild } from '@angular/core';
 import { ProductsService } from '../../../core/services/products.service';
 import { PrimitiveProduct } from '../../../core/models/product.model';
 import { map, Subscription, switchMap } from 'rxjs';
@@ -10,7 +10,7 @@ import { MatPaginator } from '@angular/material/paginator';
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.scss'],
 })
-export class ProductsComponent implements AfterViewInit {
+export class ProductsComponent implements AfterViewInit, OnDestroy {
   products: PrimitiveProduct[] = [];
   totalCount = 0;
   errorMessage: string | null = null;
@@ -29,6 +29,8 @@ export class ProductsComponent implements AfterViewInit {
     //     this.totalCount = totalCount;
     //   },
     // });
+    console.log('Total Products:', this.productsService.getProductsAllCount()); // 13 (if all 13 products are fetched correctly)
+
     this.route.queryParamMap
       .pipe(
         switchMap((queryMap) => {

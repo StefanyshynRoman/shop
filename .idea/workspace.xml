@@ -5,23 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.3.2 paginator_fe">
-      <change afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/configuration/CorsConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/configuration/CorsConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/material/mat-paginator-customs-intl.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/shared/components/alert/alert.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/shared/components/alert/alert.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/shared/components/alert/alert.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/shared/components/alert/alert.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/UserConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/UserConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/core.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/core.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/product.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/product.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/fasada/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/fasada/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/products.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/products.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product/product.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product/product.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product/product.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product/product.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/products.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/products.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/products.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/products.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/environments/environment.development.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/environments/environment.development.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/material.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/shared/shared.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +139,7 @@
       <recent name="com.exemple.gatway.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthApplication ">
+  <component name="RunManager" selected="npm.start">
     <configuration name="mail-activ.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/shop/auth/src/main/resources/static/mail-activ.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -242,7 +237,7 @@
       <workItem from="1711462449785" duration="82321000" />
       <workItem from="1712910262586" duration="76246000" />
       <workItem from="1713810069318" duration="4727000" />
-      <workItem from="1714146501173" duration="16807000" />
+      <workItem from="1714146501173" duration="27968000" />
     </task>
     <task id="LOCAL-00001" summary="shop v0.0.1 init">
       <option name="closed" value="true" />
@@ -532,7 +527,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714150319049</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="shop v0.3.2 paginator_fe">
+      <option name="closed" value="true" />
+      <created>1714327986211</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1714327986211</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

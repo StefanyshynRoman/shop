@@ -480,3 +480,11 @@ u
 Egatway/src/main/java/com/exemple/gatway/config/CorsConfiguration.java,e\f\efbfbbc2ba72918eae0a710bc014a53a82da0e2b
 †
 Vfileservice/src/main/java/com/example/fileservice/configuration/CorsConfiguration.java,c\3\c3961dee9cd62c851179355f95e9740765da85db
+r
+Bshop-fe/src/app/modules/shared/components/alert/alert.component.ts,1\5\15bd218426e8f560a692e510dd855b075161e205
+t
+Dshop-fe/src/app/modules/shared/components/alert/alert.component.html,e\3\e37a3a1ce3268f0f190b36b74a7188c92233c5ec
+w
+Gshop-fe/src/app/modules/shared/components/alert/alert.component.spec.ts,4\6\4684515ff1e0b1626f0d0120a3426c1f3001ad9d
+t
+Dshop-fe/src/app/modules/shared/components/alert/alert.component.scss,6\7\67fe0392b078ae510b18dd36e0caa85f154c1687

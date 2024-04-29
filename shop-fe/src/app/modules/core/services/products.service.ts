@@ -11,6 +11,13 @@ export class ProductsService {
   apiUrl = `${environment.apiUrl1}/product`;
 
   constructor(private http: HttpClient) {}
+  getProductsAllCount(): Observable<number> {
+    return this.http.get<any[]>(`${this.apiUrl}`).pipe(
+      map((response) => {
+        return response.length;
+      }),
+    );
+  }
 
   getProducts(
     pageIndex = 1,
@@ -28,12 +35,10 @@ export class ProductsService {
       .pipe(
         map((response) => {
           if (!response.body) return { products: [], totalCount: 0 };
-          console.log(response.headers.get('Connection'));
-          console.log(response.headers.get('X-Total-Count'));
-          console.log(response.body.length);
-          console.log(response.headers.getAll('X-Total-Count'));
+
           const totalCount = Number(response.headers.get('X-Total-Count'));
-          console.log({ products: [...response.body], totalCount });
+          console.log('_________________________________');
+          console.log(this.getProductsAllCount());
           return { products: [...response.body], totalCount };
         }),
       );
