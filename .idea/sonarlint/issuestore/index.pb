@@ -488,3 +488,9 @@ w
 Gshop-fe/src/app/modules/shared/components/alert/alert.component.spec.ts,4\6\4684515ff1e0b1626f0d0120a3426c1f3001ad9d
 t
 Dshop-fe/src/app/modules/shared/components/alert/alert.component.scss,6\7\67fe0392b078ae510b18dd36e0caa85f154c1687
+l
+<auth/src/main/java/auth/configuration/CustomUserDetails.java,3\6\361083ff9ec1f8d7639c665a2ba3e0a53f6e0d4a
+s
+Cauth/src/main/java/auth/configuration/CustomUserDetailsService.java,f\9\f9d9d98e451727807a1af4dc1ecdfbc1621dff9a
+n
+>auth/src/main/java/com/example/auth/services/CookiService.java,b\9\b93250e25c202f4e0495f8185aa509e83e2504bf

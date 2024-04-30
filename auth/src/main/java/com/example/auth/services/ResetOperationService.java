@@ -1,5 +1,6 @@
 package com.example.auth.services;
 
+
 import com.example.auth.entity.ResetOperations;
 import com.example.auth.entity.User;
 import com.example.auth.repository.ResetOperationsRepository;
@@ -29,18 +30,19 @@ public class ResetOperationService {
         ResetOperations resetOperations = new ResetOperations();
 
         resetOperations.setUid(UUID.randomUUID().toString());
-        resetOperations.setCreateDate(new Timestamp(System.currentTimeMillis()));
+        resetOperations.setCreateDate(new Timestamp(System.currentTimeMillis()).toString());
         resetOperations.setUser(user);
 
         resetOperationsRepository.deleteAllByUser(user);
         log.info("--STOP initResetOperation");
         return resetOperationsRepository.saveAndFlush(resetOperations);
     }
+
     public void endOperation(String uid){
         resetOperationsRepository.findByUid(uid).ifPresent(resetOperationsRepository::delete);
     }
 
-    @Scheduled(cron = "0 0/15 * * * *")
+    @Scheduled(cron = "0 0/1 * * * *")
     protected void deleteExpireOperation(){
         List<ResetOperations> resetOperations = resetOperationsRepository.findExpiredOperations();
         log.info("Find {} expired operations to delete",resetOperations.size());

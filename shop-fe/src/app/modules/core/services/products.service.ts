@@ -8,16 +8,9 @@ import { GetProductsResponse, PrimitiveProduct } from '../models/product.model';
   providedIn: 'root',
 })
 export class ProductsService {
-  apiUrl = `${environment.apiUrl1}/product`;
+  apiUrl = `${environment.apiUrl}/product`;
 
   constructor(private http: HttpClient) {}
-  getProductsAllCount(): Observable<number> {
-    return this.http.get<any[]>(`${this.apiUrl}`).pipe(
-      map((response) => {
-        return response.length;
-      }),
-    );
-  }
 
   getProducts(
     pageIndex = 1,
@@ -37,8 +30,6 @@ export class ProductsService {
           if (!response.body) return { products: [], totalCount: 0 };
 
           const totalCount = Number(response.headers.get('X-Total-Count'));
-          console.log('_________________________________');
-          console.log(this.getProductsAllCount());
           return { products: [...response.body], totalCount };
         }),
       );

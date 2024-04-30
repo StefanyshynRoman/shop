@@ -1,6 +1,5 @@
 package com.exemple.gatway.filter;
 
-
 import com.exemple.gatway.config.Carousel;
 import com.exemple.gatway.utils.JwtUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -9,14 +8,12 @@ import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
 import org.springframework.core.io.buffer.DefaultDataBufferFactory;
 import org.springframework.http.*;
-import org.springframework.http.server.ServerHttpRequest;
 import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-
 
 import java.sql.Timestamp;
 import java.util.List;
@@ -44,7 +41,7 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
     public GatewayFilter apply(Config config) {
         return ((exchange, chain) -> {
             log.info("--START GatewayFilter");
-            if (validator.isSecure.test((ServerHttpRequest) exchange.getRequest())) {
+            if (validator.isSecure.test(exchange.getRequest())) {
                 if (!exchange.getRequest().getCookies().containsKey(HttpHeaders.AUTHORIZATION) && !exchange.getRequest().getCookies().containsKey("refresh")) {
                     exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
                     exchange.getResponse().getHeaders().setContentType(MediaType.APPLICATION_JSON);
@@ -81,7 +78,7 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
                         httpHeaders.add("Cookie",cookies);
                         HttpEntity<Object> entity = new HttpEntity<>(httpHeaders);
                         ResponseEntity<String> response;
-                        if (validator.isAdmin.test((ServerHttpRequest) exchange.getRequest())){
+                        if (validator.isAdmin.test(exchange.getRequest())){
                             response = template.exchange("http://"+carousel.getUriAuth()+"/api/v1/auth/authorize", HttpMethod.GET,entity, String.class);
                         }else {
                             response = template.exchange("http://"+carousel.getUriAuth()+"/api/v1/auth/validate", HttpMethod.GET,entity, String.class);
@@ -121,8 +118,8 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
         });
     }
 
+
     public static class Config {
 
     }
 }
-

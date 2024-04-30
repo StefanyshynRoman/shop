@@ -3,12 +3,10 @@ package com.example.auth.entity;
 import lombok.Getter;
 
 import java.sql.Timestamp;
-
 @Getter
 public class AuthResponse {
     private final String timestamp;
     private final String message;
-
     private final Code code;
 
     public AuthResponse(Code code) {
