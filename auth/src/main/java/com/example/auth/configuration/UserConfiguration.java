@@ -14,25 +14,16 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.access.channel.ChannelProcessingFilter;
-import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
-import org.springframework.web.filter.CorsFilter;
 
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
 public class UserConfiguration {
+
     private final UserRepository userRepository;
 
-
     @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
-
-    @Bean
-    public UserDetailsService userDetailsService() {
+    public UserDetailsService userDetailsService(){
         return new CustomUserDetailsService(userRepository);
     }
 
@@ -40,47 +31,26 @@ public class UserConfiguration {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http.csrf().disable()
                 .authorizeHttpRequests()
-                .requestMatchers("/api/v1/auth/register").permitAll()
-                .requestMatchers("/api/v1/auth/register",
-                        "/api/v1/auth/login",
-                        "/api/v1/auth/validate",
-                        "/api/v1/auth/reset-password",
-                        "/api/v1/auth/activate",
-                        "/api/v1/auth/logout",
-                        "/api/v1/auth/auto-login",
-                        "/api/v1/auth/logged-in",
-                        "/api/v1/auth/authorize")
-                .permitAll()
+                .requestMatchers("/api/v1/auth/register","/api/v1/auth/login","/api/v1/auth/validate","/api/v1/auth/reset-password","/api/v1/auth/activate","/api/v1/auth/logout","/api/v1/auth/auto-login","/api/v1/auth/logged-in","/api/v1/auth/authorize").permitAll()
                 .and()
-                .httpBasic()
-                .and()
-                .addFilterBefore(corsFilter(), ChannelProcessingFilter.class)
                 .build();
     }
-
     @Bean
-    public CorsFilter corsFilter() {
-        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        CorsConfiguration config = new CorsConfiguration();
-        config.setAllowCredentials(true);
-        config.addAllowedOriginPattern("*://localhost:4200");
-        //   config.addAllowedOrigin("*"); // Розрішити всі домени
-        config.addAllowedMethod("*"); // Розрішити всі HTTP методи
-        config.addAllowedHeader("*"); // Розрішити всі заголовки
-        source.registerCorsConfiguration("/**", config);
-        return new CorsFilter(source);
+    public PasswordEncoder passwordEncoder(){
+        return  new BCryptPasswordEncoder();
     }
 
+
     @Bean
-    public AuthenticationProvider authenticationProvider() {
-        DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
+    public AuthenticationProvider authenticationProvider(){
+        DaoAuthenticationProvider authenticationProvider=new DaoAuthenticationProvider();
         authenticationProvider.setUserDetailsService(userDetailsService());
         authenticationProvider.setPasswordEncoder(passwordEncoder());
         return authenticationProvider;
     }
 
     @Bean
-    public AuthenticationManager authenticationManager(AuthenticationConfiguration configuration) throws Exception {
-        return configuration.getAuthenticationManager();
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
+        return config.getAuthenticationManager();
     }
 }

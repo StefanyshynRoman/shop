@@ -29,7 +29,7 @@ export class ProductsComponent implements AfterViewInit, OnDestroy {
     //     this.totalCount = totalCount;
     //   },
     // });
-    console.log('Total Products:', this.productsService.getProductsAllCount()); // 13 (if all 13 products are fetched correctly)
+    //console.log('Total Products:', this.productsService.getProductsAllCount()); // 13 (if all 13 products are fetched correctly)
 
     this.route.queryParamMap
       .pipe(

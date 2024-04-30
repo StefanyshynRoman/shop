@@ -1,11 +1,10 @@
 package com.example.auth.entity;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.sql.Timestamp;
 
 @Table(name = "resetoperations")
 @Entity
@@ -22,6 +21,6 @@ public class ResetOperations {
     @JoinColumn(name = "users")
     private User user;
     @Column(name = "createdate")
-    private Timestamp createDate;
+    private String createDate;
     private String uid;
 }

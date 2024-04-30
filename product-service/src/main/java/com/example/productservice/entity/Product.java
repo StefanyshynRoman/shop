@@ -14,10 +14,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @MappedSuperclass
 public class Product {
-    @Id
-    @GeneratedValue(generator = "product_id_seq", strategy = GenerationType.SEQUENCE)
-    @SequenceGenerator(name = "product_id_seq", sequenceName = "product_id_seq", allocationSize = 1)
-    private long id;
+
     private String uid;
     private boolean activate;
     @Column(name = "product_name")
@@ -29,4 +26,3 @@ public class Product {
     private String parameters;
     private LocalDate createAt;
 }
-
