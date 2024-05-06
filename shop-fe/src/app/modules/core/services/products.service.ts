@@ -15,11 +15,26 @@ export class ProductsService {
   getProducts(
     pageIndex = 1,
     itemsPerPage = 5,
+    name: string | null = null,
+    sortElement: string | null = null,
+    order: string | null = null,
+    category: string | null = null,
   ): Observable<GetProductsResponse> {
-    const params = new HttpParams()
+    let params = new HttpParams()
       .append('_page', pageIndex)
       .append('_limit', itemsPerPage);
-
+    if (name) {
+      params = params.append('name_like', name);
+    }
+    if (sortElement) {
+      params = params.append('_sort', sortElement);
+    }
+    if (order) {
+      params = params.append('_order', order);
+    }
+    if (category) {
+      params = params.append('_category', category);
+    }
     return this.http
       .get<PrimitiveProduct[]>(`${this.apiUrl}`, {
         observe: 'response',

@@ -494,3 +494,7 @@ s
 Cauth/src/main/java/auth/configuration/CustomUserDetailsService.java,f\9\f9d9d98e451727807a1af4dc1ecdfbc1621dff9a
 n
 >auth/src/main/java/com/example/auth/services/CookiService.java,b\9\b93250e25c202f4e0495f8185aa509e83e2504bf
+k
+;shop-fe/src/app/modules/core/services/categories.service.ts,c\4\c4100aa1ed4b15a92485e0b672dd38486aac5916
+p
+@shop-fe/src/app/modules/core/services/categories.service.spec.ts,d\0\d09a22b699e1961676264e4f3ba70eeca5253741

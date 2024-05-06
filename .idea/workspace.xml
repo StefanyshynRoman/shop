@@ -5,42 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.3.3 paginator_fe">
-      <change afterPath="$PROJECT_DIR$/auth/src/main/resources/static/mail-aktywuj.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/categories.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/categories.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/AuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/AuthApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/CustomUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/CustomUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/EmailConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/EmailConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/UserConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/configuration/UserConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/AuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/AuthResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/ResetOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/ResetOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/exceptions/UserExistingWithMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/exceptions/UserExistingWithMail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/fasada/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/fasada/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/JwtService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/ResetOperationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/ResetOperationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/resources/static/mail-activ.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/config/Carousel.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/config/Carousel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/filter/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/filter/AuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/filter/RouteValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/filter/RouteValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/utils/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatway/src/main/java/com/exemple/gatway/utils/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gatway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/configuration/CorsConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/entity/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/entity/ProductDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/entity/ProductEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/entity/ProductEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/fasada/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/fasada/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/fasada/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/fasada/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/mediator/ProductMediator.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/mediator/ProductMediator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/example/productservice/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/products.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/products.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/products.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/products.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/products.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/products.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/products.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/products.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/environments/environment.development.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/environments/environment.development.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/shared/components/alert/alert.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/shared/components/alert/alert.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/material.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +81,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "JUnit.All in eureka.executor": "Run",
     "JavaScript Debug.mail-activ.html.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -170,7 +148,15 @@
       <recent name="com.exemple.gatway.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
+  <component name="RunManager" selected="npm.start">
+    <configuration name="All in eureka" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="eureka" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="mail-activ.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/shop/auth/src/main/resources/static/mail-activ.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -231,6 +217,7 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.mail-activ.html" />
+      <item itemvalue="JUnit.All in eureka" />
       <item itemvalue="npm.start" />
       <item itemvalue="Spring Boot.FileServiceApplication" />
       <item itemvalue="Spring Boot.ProductServiceApplication" />
@@ -241,6 +228,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AuthApplication " />
+        <item itemvalue="JUnit.All in eureka" />
         <item itemvalue="JavaScript Debug.mail-activ.html" />
       </list>
     </recent_temporary>
