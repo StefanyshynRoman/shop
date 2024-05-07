@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './modules/auth/components/login/login.component';
 
 //const routes: Routes = [{ path: 'logowanie', component: LoginComponent }];
 const routes: Routes = [
@@ -14,6 +13,13 @@ const routes: Routes = [
     loadChildren: () =>
       import('./modules/products/products.module').then(
         (m) => m.ProductsModule,
+      ),
+  },
+  {
+    path: 'administracja',
+    loadChildren: () =>
+      import('./modules/administration/administration.module').then(
+        (m) => m.AdministrationModule,
       ),
   },
 ];

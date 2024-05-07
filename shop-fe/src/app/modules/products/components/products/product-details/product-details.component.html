@@ -1,10 +1,36 @@
-<div class="row">
-  <ng-container *ngIf="product">
-  <div class="col-md-6">
-    <app-images-carousel [productName]='product.name' [imageUrls]='product.imageUrls'></app-images-carousel>
+<ng-container *ngIf="product">
+  <div class="row">
+    <div class="col-md-6 col-12">
+      <app-images-carousel [productName]='product.name' [imageUrls]='product.imageUrls'></app-images-carousel>
+    </div>
+    <div class="col-md-6 col-12 d-flex align-items-center justify-content-center">
+      <div class="text-center">
+        <p class="product-name">{{ product.name }}</p>
+        <p>{{ product.price | currency:'zl' }}</p>
+        <p>Kup teraz!</p>
+      </div>
+    </div>
   </div>
-  <div class="col-md-6">
+  <div class="row">
+    <div class="col-md-12 mt-3">
+      <p class="product-desc">Opis productu</p>
+      <div [innerHTML]="product.descHtml">
 
+      </div>
+    </div>
   </div>
-  </ng-container>
-</div>
+  <div class="row" *ngIf="parameters">
+    <div class="col-md-12 mt-3">
+      <p class="product-desc">Specyfikacija</p>
+      <p class="text-center">Parametry</p>
+      <table class="table table-bordered">
+        <tbody>
+        <tr *ngFor="let parameter of parameters | keyvalue">
+          <td class="text-end table-cell"><span class="product-parameter-key"> {{ parameter.key }}</span></td>
+          <td class="text-start table-cell">{{ parameter.value }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</ng-container>

@@ -11,10 +11,13 @@ import { Product } from '../../../../core/models/product.model';
 })
 export class ProductDetailsComponent implements OnInit {
   product: Product | null = null;
+  parameters: { [key: string]: string } | null = null;
+
   constructor(
     private route: ActivatedRoute,
     private productsService: ProductsService,
   ) {}
+
   ngOnInit(): void {
     this.route.paramMap
       .pipe(
@@ -26,6 +29,12 @@ export class ProductDetailsComponent implements OnInit {
       .subscribe({
         next: (product) => {
           this.product = { ...product };
+          try {
+            this.parameters = JSON.parse(product.parameters);
+          } catch (e) {
+            this.parameters = null;
+          }
+          console.log(this.parameters);
         },
       });
   }

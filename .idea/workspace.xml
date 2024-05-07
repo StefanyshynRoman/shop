@@ -4,25 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.3.7 FE_searchingAndSorting">
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/images-carousel/images-carousel.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/images-carousel/images-carousel.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/images-carousel/images-carousel.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/images-carousel/images-carousel.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/product-details.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/product-details.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/product-details.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/product-details.component.ts" afterDir="false" />
+    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.3.7 FE_imagecarusel">
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/administration-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/administration.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/add-category-form/add-category-form.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/add-category-form/add-category-form.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/add-category-form/add-category-form.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/add-category-form/add-category-form.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/administrator.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/administrator.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/administrator.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/administrator.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/manage-products.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/manage-products.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/manage-products.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/manage-products.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/product.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/product.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/products.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/products.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product/product.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product/product.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product/product.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product/product.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product/product.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product/product.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/products-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/products-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/products.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/products.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/images-carousel/images-carousel.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/images-carousel/images-carousel.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/product-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/product-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/product-details.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/product-details.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/product-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/product-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/environments/environment.development.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/environments/environment.development.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +161,7 @@
       <recent name="com.exemple.gatway.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
+  <component name="RunManager" selected="npm.start">
     <configuration name="All in eureka" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="eureka" />
       <option name="PACKAGE_NAME" value="" />
@@ -575,7 +583,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715013763883</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="shop v0.3.7 FE_imagecarusel">
+      <option name="closed" value="true" />
+      <created>1715066335404</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1715066335404</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,7 +625,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="shop v0.0.11 auth_service-fe" />
     <MESSAGE value="shop v0.0.12 auth_service-fe" />
     <MESSAGE value="shop v0.0.13 auth_effects-fe" />
     <MESSAGE value="shop v0.0.14 auth_intercept-fe" />
@@ -634,7 +649,8 @@
     <MESSAGE value="shop v0.3.2 paginator_fe" />
     <MESSAGE value="shop v0.3.3 paginator_fe" />
     <MESSAGE value="shop v0.3.7 FE_searchingAndSorting" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop v0.3.7 FE_searchingAndSorting" />
+    <MESSAGE value="shop v0.3.7 FE_imagecarusel" />
+    <option name="LAST_COMMIT_MESSAGE" value="shop v0.3.7 FE_imagecarusel" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
