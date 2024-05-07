@@ -2,7 +2,11 @@ import { Injectable } from '@angular/core';
 import { environment } from '../../../../environments/environment';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { map, Observable } from 'rxjs';
-import { GetProductsResponse, PrimitiveProduct } from '../models/product.model';
+import {
+  GetProductsResponse,
+  PrimitiveProduct,
+  Product,
+} from '../models/product.model';
 
 @Injectable({
   providedIn: 'root',
@@ -11,7 +15,14 @@ export class ProductsService {
   apiUrl = `${environment.apiUrl}/product`;
 
   constructor(private http: HttpClient) {}
-
+  getProduct(name: string, date: string): Observable<Product> {
+    const params = new HttpParams()
+      .append('name_like', name)
+      .append('data', date);
+    return this.http.get<Product>(`${this.apiUrl}`, {
+      params,
+    });
+  }
   getProducts(
     pageIndex = 1,
     itemsPerPage = 5,
