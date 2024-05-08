@@ -542,3 +542,7 @@ pshop-fe/src/app/modules/administration/component/administrator/manage-products/
 [shop-fe/src/app/modules/administration/component/administrator/administrator.component.scss,9\7\9704865cc7ea89d4bb518616e53d0e45f09021ad
 o
 ?shop-fe/src/app/modules/administration/administration.module.ts,3\2\32ec72841133121cea5f9efe27a26fe31fbf8ee7
+b
+2shop-fe/src/app/modules/core/guards/admin.guard.ts,2\b\2b0f29e0fe907e8c19801357691e0e79d801d355
+g
+7shop-fe/src/app/modules/core/guards/admin.guard.spec.ts,2\8\28c524dfa485e26656b9dfecc79b986ee7234e81

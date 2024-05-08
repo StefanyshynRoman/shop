@@ -22,7 +22,11 @@
             </ng-container>
           </ul>
         </li>
-        <ng-container *ngIf="user$|async; else notUser">
+        <ng-container *ngIf="user$|async as user; else notUser">
+          <li class="nav-item" *ngIf="isAdmin(user.role)">
+            <a class="nav-link " aria-current="page" routerLink='/administracja/zarzadzaj'
+               routerLinkActive='active' [routerLinkActiveOptions]="{exact:true}">Administracja</a>
+          </li>
           <li class="nav-item">
             <button mat-raised-button color="primary" (click)="logout()">Wyloguj sie</button>
           </li>
@@ -31,12 +35,8 @@
           <li class="nav-item">
             <a class="nav-link " aria-current="page" routerLink='logowanie'>Login up</a>
           </li>
-
         </ng-template>
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" routerLink='/administracja/zarzadzaj'
-             routerLinkActive='active' [routerLinkActiveOptions]="{exact:true}">Administracja</a>
-        </li>
+
       </ul>
     </div>
   </div>
