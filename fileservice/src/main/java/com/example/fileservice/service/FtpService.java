@@ -1,6 +1,5 @@
 package com.example.fileservice.service;
 
-import aj.org.objectweb.asm.ClassWriter;
 import com.example.fileservice.entity.ImageEntity;
 import com.example.fileservice.exception.FtpConnectionException;
 import org.apache.commons.net.ftp.FTP;
@@ -9,7 +8,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -29,25 +27,26 @@ public class FtpService {
     @Value("${ftp.port}")
     private int FTP_PORT;
 
+
     private FTPClient getFtpConnection() throws IOException {
         FTPClient ftpClient = new FTPClient();
         ftpClient.connect(FTP_SERVER, FTP_PORT);
         ftpClient.login(FTP_USERNAME, FTP_PASSWORD);
-        ftpClient.enterLocalActiveMode();
+
+        ftpClient.enterLocalPassiveMode();
         ftpClient.setFileType(FTP.BINARY_FILE_TYPE);
         return ftpClient;
     }
 
-    public ImageEntity uploadFileTOFTP(MultipartFile file) throws FtpConnectionException, IOException {
+    public ImageEntity uploadFileToFtp(MultipartFile file) throws FtpConnectionException,IOException {
         try {
             FTPClient ftpClient = getFtpConnection();
-            String remoteFilePath = FTP_ORIGIN_DIRECTORY + "/" + LocalDate.now() + "/" + file.getOriginalFilename();
-            boolean uploaded = streamFile(file, ftpClient, remoteFilePath);
-
+            String remoteFilePath = FTP_ORIGIN_DIRECTORY +"/"+LocalDate.now()+"/"+ file.getOriginalFilename();
+            boolean uploaded = streamFile(file,ftpClient,remoteFilePath);
             if (!uploaded) {
                 createFolder(ftpClient);
-                if (!streamFile(file, ftpClient, remoteFilePath)) {
-                    throw new FtpConnectionException("Cannt conect to server");
+                if (!streamFile(file,ftpClient,remoteFilePath)){
+                    throw new FtpConnectionException("Cannot connect to server");
                 }
             }
             ftpClient.logout();
@@ -56,18 +55,16 @@ public class FtpService {
                     .path(remoteFilePath)
                     .uuid(UUID.randomUUID().toString())
                     .createAt(LocalDate.now())
-                    .isUsed(false)
-                    .build();
+                    .isUsed(false).build();
         } catch (IOException e) {
             throw new FtpConnectionException(e);
         }
     }
-
     private void createFolder(FTPClient client) throws IOException {
-        client.makeDirectory(FTP_ORIGIN_DIRECTORY + "/" + LocalDate.now());
+        client.makeDirectory(FTP_ORIGIN_DIRECTORY+"/"+LocalDate.now());
     }
 
-    private boolean streamFile(MultipartFile file, FTPClient ftpClient, String remoteFilePath) throws IOException {
+    private boolean streamFile(MultipartFile file,FTPClient ftpClient,String remoteFilePath) throws IOException {
         InputStream inputStream = file.getInputStream();
         boolean uploaded = ftpClient.storeFile(remoteFilePath, inputStream);
         inputStream.close();
@@ -85,10 +82,10 @@ public class FtpService {
     public ByteArrayOutputStream getFile(ImageEntity imageEntity) throws IOException {
         FTPClient ftpClient = getFtpConnection();
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-        boolean downloaded = ftpClient.retrieveFile(imageEntity.getPath(), outputStream);
+        boolean downloaded = ftpClient.retrieveFile(imageEntity.getPath(),outputStream);
         ftpClient.logout();
         ftpClient.disconnect();
-        if (downloaded) {
+        if (downloaded){
             return outputStream;
         }
         throw new FtpConnectionException("Cannot download file");

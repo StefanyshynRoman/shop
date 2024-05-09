@@ -7,4 +7,9 @@
   <div class="d-flex justify-content-end">
     <button mat-raised-button color="primary" (click)="uploadFile()">Wgraj zdiecie</button>
   </div>
+  <app-alert *ngIf="errorImageUploadMsg" [message]="errorImageUploadMsg" [alertType]="'warning'"></app-alert>
+
+  <app-uploaded-images *ngIf="imageUrls.length > 0" [imageUrls]="imageUrls"
+  (deleteImageUrl)="setActiveImageUrls($event)"></app-uploaded-images>
+
 </section>

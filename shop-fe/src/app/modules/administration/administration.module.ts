@@ -10,6 +10,7 @@ import { MatInputModule } from '@angular/material/input';
 import { SharedModule } from '../shared/shared.module';
 import { AddProductFormComponent } from './component/administrator/manage-products/add-product-form/add-product-form.component';
 import { DeleteProductFormComponent } from './component/administrator/manage-products/delete-product-form/delete-product-form.component';
+import { UploadedImagesComponent } from './component/administrator/manage-products/add-product-form/uploaded-images/uploaded-images.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { DeleteProductFormComponent } from './component/administrator/manage-pro
     ManageProductsComponent,
     AddProductFormComponent,
     DeleteProductFormComponent,
+    UploadedImagesComponent,
   ],
   imports: [
     SharedModule,

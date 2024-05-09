@@ -4,24 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.3.7 FE_categorie">
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/add-product-form.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/add-product-form.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/add-product-form.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/add-product-form.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-form.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-form.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-form.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-form.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/image.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/image.service.ts" afterDir="false" />
+    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.3.7 FE_image">
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/uploaded-images/uploaded-images.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/uploaded-images/uploaded-images.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/uploaded-images/uploaded-images.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/uploaded-images/uploaded-images.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/image.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/configuration/CorsConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/fassada/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/fassada/ImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/mediator/MediatorImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/mediator/MediatorImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/repository/ImageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/repository/ImageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/service/FtpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/service/FtpService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/service/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/service/ImageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/administration.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/administration.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/manage-products.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/manage-products.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/manage-products.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/manage-products.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/material.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/add-product-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/add-product-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/add-product-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/add-product-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/image.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/image.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +38,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="TypeScript File" />
         <option value="Class" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -152,7 +154,7 @@
       <recent name="com.exemple.gatway.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
+  <component name="RunManager" selected="Spring Boot.AuthApplication ">
     <configuration name="All in eureka" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="eureka" />
       <option name="PACKAGE_NAME" value="" />
@@ -261,7 +263,7 @@
       <workItem from="1712910262586" duration="76246000" />
       <workItem from="1713810069318" duration="4727000" />
       <workItem from="1714146501173" duration="35094000" />
-      <workItem from="1715235079024" duration="4144000" />
+      <workItem from="1715235079024" duration="16635000" />
     </task>
     <task id="LOCAL-00001" summary="shop v0.0.1 init">
       <option name="closed" value="true" />
@@ -599,7 +601,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715160822884</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="shop v0.3.7 FE_image">
+      <option name="closed" value="true" />
+      <created>1715239954771</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1715239954771</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -633,7 +643,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="shop v0.0.14 auth_intercept-fe" />
     <MESSAGE value="shop v0.0.15 auth_login-fe" />
     <MESSAGE value="shop v0.0.16 auth_logout-fe" />
     <MESSAGE value="shop v0.0.16 auth_autologin-fe" />
@@ -658,7 +667,8 @@
     <MESSAGE value="shop v0.3.7 FE_imagecarusel" />
     <MESSAGE value="shop v0.3.7 FE_admins" />
     <MESSAGE value="shop v0.3.7 FE_categorie" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop v0.3.7 FE_categorie" />
+    <MESSAGE value="shop v0.3.7 FE_image" />
+    <option name="LAST_COMMIT_MESSAGE" value="shop v0.3.7 FE_image" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

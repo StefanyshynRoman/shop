@@ -554,3 +554,13 @@ k
 …shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-form.component.scss,c\c\cc1a66dfb596ba4c7d5d49cc3e83d66f41dcf704
 ¶
 …shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-form.component.html,f\0\f0039d8c3dc6bd9bf0aa28c5901b7b5410d47759
+b
+2shop-fe/src/app/modules/core/models/image.model.ts,4\7\471b554aeff18f3138537de6d3aadcafddcbaca6
+½
+Œshop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/uploaded-images/uploaded-images.component.ts,2\3\23a417bd2b35fa1f1932a38e569a2d8a560a90aa
+¿
+Žshop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/uploaded-images/uploaded-images.component.html,0\7\07582a921756490d0a835041b5fbc3f725588a3b
+¿
+Žshop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/uploaded-images/uploaded-images.component.scss,f\e\fe0178aaf11c7d8013c307af704a3abe967463f7
+Â
+‘shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/uploaded-images/uploaded-images.component.spec.ts,8\c\8ce78c4d9a538e3f8161c93f9d06c82deebd6ca5

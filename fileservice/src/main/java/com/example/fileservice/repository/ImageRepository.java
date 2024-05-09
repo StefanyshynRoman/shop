@@ -9,9 +9,10 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface ImageRepository extends JpaRepository<ImageEntity, Long> {
+public interface ImageRepository extends JpaRepository<ImageEntity,Long> {
+
     Optional<ImageEntity> findByUuid(String uuid);
 
-    @Query(nativeQuery = true, value = "SELECT * FROM image_data where createat<current_date- interval '2 days' and isused=false")
+    @Query(nativeQuery = true, value = "SELECT * FROM image_data where createat < current_date - interval '2 days' and isused = false")
     List<ImageEntity> findDontUseImages();
 }
