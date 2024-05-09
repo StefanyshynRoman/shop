@@ -8,12 +8,16 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { SharedModule } from '../shared/shared.module';
+import { AddProductFormComponent } from './component/administrator/manage-products/add-product-form/add-product-form.component';
+import { DeleteProductFormComponent } from './component/administrator/manage-products/delete-product-form/delete-product-form.component';
 
 @NgModule({
   declarations: [
     AdministratorComponent,
     AddCategoryFormComponent,
     ManageProductsComponent,
+    AddProductFormComponent,
+    DeleteProductFormComponent,
   ],
   imports: [
     SharedModule,
