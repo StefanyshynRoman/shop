@@ -564,3 +564,5 @@ b
 Žshop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/uploaded-images/uploaded-images.component.scss,f\e\fe0178aaf11c7d8013c307af704a3abe967463f7
 Â
 ‘shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/uploaded-images/uploaded-images.component.spec.ts,8\c\8ce78c4d9a538e3f8161c93f9d06c82deebd6ca5
+n
+>auth/src/main/java/com/example/auth/services/CookiService.java,b\9\b93250e25c202f4e0495f8185aa509e83e2504bf

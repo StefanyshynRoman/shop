@@ -4,26 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.3.7 FE_image">
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/uploaded-images/uploaded-images.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/uploaded-images/uploaded-images.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/uploaded-images/uploaded-images.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/uploaded-images/uploaded-images.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/image.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.4.0 FE_imageFTP">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/configuration/CorsConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/fassada/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/fassada/ImageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/mediator/MediatorImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/mediator/MediatorImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/repository/ImageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/repository/ImageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/service/FtpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/service/FtpService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/service/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/java/com/example/fileservice/service/ImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fileservice/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/administration.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/administration.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/add-product-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/add-product-form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/add-product-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/add-product-form.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/image.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/image.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/LoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/LoginResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/UserRegisterDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/UserRegisterDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/exceptions/UserDontExistException.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/exceptions/UserDontExistException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/repository/ResetOperationsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/repository/ResetOperationsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/CookieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/CookiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/services/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +252,7 @@
       <workItem from="1712910262586" duration="76246000" />
       <workItem from="1713810069318" duration="4727000" />
       <workItem from="1714146501173" duration="35094000" />
-      <workItem from="1715235079024" duration="16635000" />
+      <workItem from="1715235079024" duration="19653000" />
     </task>
     <task id="LOCAL-00001" summary="shop v0.0.1 init">
       <option name="closed" value="true" />
@@ -609,7 +598,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715239954771</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="shop v0.4.0 FE_imageFTP">
+      <option name="closed" value="true" />
+      <created>1715276846721</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1715276846721</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,7 +640,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="shop v0.0.15 auth_login-fe" />
     <MESSAGE value="shop v0.0.16 auth_logout-fe" />
     <MESSAGE value="shop v0.0.16 auth_autologin-fe" />
     <MESSAGE value="shop v0.0.16 auth_log_be" />
@@ -668,7 +664,8 @@
     <MESSAGE value="shop v0.3.7 FE_admins" />
     <MESSAGE value="shop v0.3.7 FE_categorie" />
     <MESSAGE value="shop v0.3.7 FE_image" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop v0.3.7 FE_image" />
+    <MESSAGE value="shop v0.4.0 FE_imageFTP" />
+    <option name="LAST_COMMIT_MESSAGE" value="shop v0.4.0 FE_imageFTP" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

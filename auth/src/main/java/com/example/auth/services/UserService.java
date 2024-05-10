@@ -36,7 +36,7 @@ public class UserService {
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
     private final EmailService emailService;
-    private final CookieService cookiService;
+    private final CookiService cookiService;
     @Value("${jwt.exp}")
     private int exp;
     @Value("${jwt.refresh.exp}")
