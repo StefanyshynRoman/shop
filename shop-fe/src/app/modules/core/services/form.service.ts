@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import {
   AddCategoryForm,
   LoginForm,
   PasswdRecoveryForm,
   PasswordsForm,
+  PostProduct,
   RegisterForm,
 } from '../models/forms.models';
 import { equivalentValidator } from '../../shared/validators/equivalent.validator';
-import { hasErrors } from '@angular/compiler-cli/ngcc/src/packages/transformer';
 
 @Injectable({
   providedIn: 'root',
@@ -22,6 +22,7 @@ export class FormService {
       }),
     });
   }
+
   initPasswdRecoveryForm(): FormGroup<PasswdRecoveryForm> {
     return new FormGroup({
       email: new FormControl('', {
@@ -30,6 +31,44 @@ export class FormService {
       }),
     });
   }
+
+  initAddProductForm(): FormGroup<PostProduct> {
+    return new FormGroup({
+      name: new FormControl('', {
+        validators: [Validators.required],
+        nonNullable: true,
+      }),
+      mainDesc: new FormControl('', {
+        validators: [Validators.required],
+        nonNullable: true,
+      }),
+      descHtml: new FormControl('', {
+        validators: [Validators.required],
+        nonNullable: true,
+      }),
+      price: new FormControl('', {
+        validators: [Validators.required],
+        nonNullable: true,
+      }),
+      category: new FormControl('', {
+        validators: [Validators.required],
+        nonNullable: true,
+      }),
+      parameters: new FormArray([
+        new FormGroup({
+          key: new FormControl('', {
+            validators: [Validators.required],
+            nonNullable: true,
+          }),
+          value: new FormControl('', {
+            validators: [Validators.required],
+            nonNullable: true,
+          }),
+        }),
+      ]),
+    });
+  }
+
   initPasswordsForm(): FormGroup<PasswordsForm> {
     return new FormGroup(
       {
@@ -53,6 +92,7 @@ export class FormService {
       { validators: [equivalentValidator('password', 'repeatedPassword')] },
     );
   }
+
   initLoginForm(): FormGroup<LoginForm> {
     return new FormGroup({
       login: new FormControl('', {
@@ -106,7 +146,6 @@ export class FormService {
       }),
     });
   }
-
   getErrorMessage(control: FormControl): string {
     if (control.hasError('required')) {
       return 'Ta kontrolka jest wymagana. ';

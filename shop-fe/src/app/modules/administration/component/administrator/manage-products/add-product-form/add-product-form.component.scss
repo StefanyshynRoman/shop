@@ -1,3 +1,10 @@
 input[type="file"]{
   display: none;
 }
+.form-control-wrapper{
+  display: flex;
+  gap: 5px;
+  .form-array-input{
+    width: 50%;
+  }
+}

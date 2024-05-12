@@ -20,3 +20,16 @@ export interface GetProductsResponse {
   products: PrimitiveProduct[];
   totalCount: number;
 }
+export interface AddProductData {
+  name: string;
+  mainDesc: string;
+  descHtml: string;
+  price: number;
+  imagesUuid: string[];
+  parameters: string;
+  category: string;
+}
+export interface PostProductResponse {
+  timestamp: string;
+  message: string;
+}

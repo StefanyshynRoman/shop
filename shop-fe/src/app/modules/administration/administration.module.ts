@@ -11,6 +11,7 @@ import { SharedModule } from '../shared/shared.module';
 import { AddProductFormComponent } from './component/administrator/manage-products/add-product-form/add-product-form.component';
 import { DeleteProductFormComponent } from './component/administrator/manage-products/delete-product-form/delete-product-form.component';
 import { UploadedImagesComponent } from './component/administrator/manage-products/add-product-form/uploaded-images/uploaded-images.component';
+import { AngularEditorModule } from '@kolkov/angular-editor';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { UploadedImagesComponent } from './component/administrator/manage-produc
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
+    AngularEditorModule,
   ],
 })
 export class AdministrationModule {}
