@@ -78,11 +78,14 @@
         </div>
       </div>
       <div class="d-flex justify-content-end my-3" >
-        <button mat-raised-button color="primary" (click)="addParameter()" >Dodaj parametr</button>
+        <button type="button" mat-raised-button color="primary" (click)="addParameter()" >Dodaj parametr</button>
       </div>
     </div>
     <div class="d-flex justify-content-end">
-      <button mat-raised-button color="primary" type="submit" >Dodaj product</button>
+      <button mat-raised-button color="primary" type="submit" [disabled]="addProductForm.invalid" >Dodaj product</button>
     </div>
+    <app-alert *ngIf="errorMessage" [message]="errorMessage" [alertType]="'warning'"]></app-alert>
+    <app-alert *ngIf="successMessage" [message]="successMessage" [alertType]="'success'"]></app-alert>
+
   </form>
 </section>

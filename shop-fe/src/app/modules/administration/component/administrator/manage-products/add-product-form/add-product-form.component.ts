@@ -17,32 +17,7 @@ import { ProductsService } from '../../../../../core/services/products.service';
   styleUrls: ['./add-product-form.component.scss'],
 })
 export class AddProductFormComponent {
-  config: AngularEditorConfig = {
-    editable: true,
-    spellcheck: true,
-    height: '15rem',
-    minHeight: '5rem',
-    placeholder: 'Wpisz tekst tutaj...',
-    translate: 'no',
-    defaultParagraphSeparator: 'p',
-    defaultFontName: 'Arial',
-    toolbarHiddenButtons: [['insertImage', 'insertVideo']],
-    customClasses: [
-      {
-        name: 'quote',
-        class: 'quote',
-      },
-      {
-        name: 'redText',
-        class: 'redText',
-      },
-      {
-        name: 'titleText',
-        class: 'titleText',
-        tag: 'h1',
-      },
-    ],
-  };
+  config: AngularEditorConfig = this.imageService.config;
   selectedFile: File | null = null;
   fileName = '';
   imageUrls: Image[] = [];
@@ -101,14 +76,12 @@ export class AddProductFormComponent {
   }
 
   addProduct() {
-    console.log(this.addProductForm);
     const formValue = this.addProductForm.getRawValue();
     const parametersObject: { [key: string]: string } = {};
     formValue.parameters.forEach((item) => {
       parametersObject[item.key] = item.value;
     });
     const parameters = `${JSON.stringify(parametersObject)}`;
-    console.log(parameters);
     const imagesUuid = this.imageUrls.map((url) => {
       const [, uuid] = url.url.split('uuid=');
       return uuid;
