@@ -29,7 +29,8 @@ export interface AddProductData {
   parameters: string;
   category: string;
 }
-export interface PostProductResponse {
+
+export interface ProductResponse {
   timestamp: string;
   message: string;
 }

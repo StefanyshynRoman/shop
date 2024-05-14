@@ -566,3 +566,11 @@ b
 ëshop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/uploaded-images/uploaded-images.component.spec.ts,8\c\8ce78c4d9a538e3f8161c93f9d06c82deebd6ca5
 n
 >auth/src/main/java/com/example/auth/services/CookiService.java,b\9\b93250e25c202f4e0495f8185aa509e83e2504bf
+Œ
+ùshop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-dialog/delete-product-dialog.component.html,5\f\5fa13f08e791f3af3bcc45d9ceafc13d128459b8
+Ã
+õshop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-dialog/delete-product-dialog.component.ts,3\5\35a4b2a2a896508c20acb1e35c67a33c0bd1e634
+Œ
+ùshop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-dialog/delete-product-dialog.component.scss,8\c\8c767f1c1dd1b6fc1c810b34e35b0f343a3f7786
+—
+†shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-dialog/delete-product-dialog.component.spec.ts,a\d\ad6544c85b3392bed776b180bb040402687e7ab6

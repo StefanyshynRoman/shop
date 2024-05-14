@@ -50,9 +50,9 @@
         </mat-select>
       </mat-form-field>
     </div>
-    <div [formArrayName]="'parameters'" *ngIf="parameters.controls.length>0">
+    <div [formArrayName]='"parameters"' *ngIf="parameters.controls.length>0">
       <p>Parametry:</p>
-      <div *ngFor="let parameter of parameters.controls; let i=index; let first=first" [formControlName]="i">
+      <div *ngFor="let parameter of parameters.controls; let i=index; let first=first" [formGroupName]="i">
         <div class="form-control-wrapper">
           <div class="form-array-input">
             <mat-form-field appearance="fill">

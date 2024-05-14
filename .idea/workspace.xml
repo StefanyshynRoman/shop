@@ -4,13 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.4.2 FE_addProduct">
+    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.4.3 FE_addProduct">
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-dialog/delete-product-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-dialog/delete-product-dialog.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-dialog/delete-product-dialog.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-dialog/delete-product-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/administration.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/administration.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/add-product-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/add-product-form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/add-product-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/add-product-form.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/image.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/image.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/product-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/product-details.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/product-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/product-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/product.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/product.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/products.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/products.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/material.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +259,7 @@
       <workItem from="1712910262586" duration="76246000" />
       <workItem from="1713810069318" duration="4727000" />
       <workItem from="1714146501173" duration="35094000" />
-      <workItem from="1715235079024" duration="37269000" />
+      <workItem from="1715235079024" duration="43918000" />
     </task>
     <task id="LOCAL-00001" summary="shop v0.0.1 init">
       <option name="closed" value="true" />
@@ -620,7 +629,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715535948971</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="shop v0.4.3 FE_addProduct">
+      <option name="closed" value="true" />
+      <created>1715595879771</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1715595879771</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -654,7 +671,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="shop v0.0.16 auth_log_be" />
     <MESSAGE value="shop v0.1.01 Product_be" />
     <MESSAGE value="shop v0.1.02 Rest_be" />
     <MESSAGE value="shop v0.1.03 pagin_be" />
@@ -679,7 +695,8 @@
     <MESSAGE value="shop v0.4.0 FE_imageFTP" />
     <MESSAGE value="shop v0.4.1 BE_errortoken" />
     <MESSAGE value="shop v0.4.2 FE_addProduct" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop v0.4.2 FE_addProduct" />
+    <MESSAGE value="shop v0.4.3 FE_addProduct" />
+    <option name="LAST_COMMIT_MESSAGE" value="shop v0.4.3 FE_addProduct" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

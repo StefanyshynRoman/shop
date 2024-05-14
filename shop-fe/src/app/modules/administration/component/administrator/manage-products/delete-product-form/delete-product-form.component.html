@@ -1,1 +1,16 @@
-<p>delete-product-form works!</p>
+<section class="my-2">
+  <mat-form-field>
+    <mat-label>Wyszukaj produkty do usuniecia</mat-label>
+    <input
+      type="text"
+      matInput
+      [formControl]="searchControl"
+      [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of filteredOptions | async" [value]="option.name"
+      (click)="openDeleteProduct(option.name, option.createAt)">
+        {{ option.name }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</section>
