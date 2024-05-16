@@ -4,22 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.4.3 FE_addProduct">
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-dialog/delete-product-dialog.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-dialog/delete-product-dialog.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-dialog/delete-product-dialog.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-dialog/delete-product-dialog.component.ts" afterDir="false" />
+    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.5.4 BE_addProduct">
+      <change afterPath="$PROJECT_DIR$/basket/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/BasketApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/configuration/ApiGatewayEndpointConfigurationImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/controller/BasketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/entity/Basket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/entity/BasketItemAddDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/entity/BasketItemDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/entity/BasketItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/entity/ListBasketItemDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/entity/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/exceptions/BasketItemDontExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/exceptions/NoBasketInfoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/repository/BasketItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/repository/BasketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/service/BasketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/service/CookieService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/main/resources/db/migration/V30__InitTables.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/src/test/java/com/example/basket/BasketApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/administration.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/administration.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/add-product-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/add-product-form/add-product-form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/administration/component/administrator/manage-products/delete-product-form/delete-product-form.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/product.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/product.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/products.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/products.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/material.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +50,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="TypeScript File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -80,53 +98,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;JUnit.All in eureka.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.mail-activ.html.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AuthApplication (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.AuthApplication .executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.AuthApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.EurekaApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.FileServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.GatwayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ProductServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;graalvm-ce-17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/roman/IdeaProjects/shop/auth/src/main/java/auth/services&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\roman\\IdeaProjects\\shop\\shop-fe\\node_modules\\prettier&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\roman\\IdeaProjects\\shop\\shop-fe\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Database Script.V30__InitTables.sql.executor": "Run",
+    "JUnit.All in eureka.executor": "Run",
+    "JavaScript Debug.mail-activ.html.executor": "Run",
+    "Maven.basket [clean,compile].executor": "Run",
+    "Maven.basket [clean,install].executor": "Run",
+    "Maven.basket [clean].executor": "Run",
+    "Maven.basket [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "Spring Boot.AuthApplication (1).executor": "Run",
+    "Spring Boot.AuthApplication .executor": "Run",
+    "Spring Boot.AuthApplication.executor": "Run",
+    "Spring Boot.BasketApplication.executor": "Run",
+    "Spring Boot.EurekaApplication.executor": "Run",
+    "Spring Boot.FileServiceApplication.executor": "Run",
+    "Spring Boot.GatwayApplication.executor": "Run",
+    "Spring Boot.ProductServiceApplication.executor": "Run",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "graalvm-ce-17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/roman/IdeaProjects/shop/auth/src/main/java/auth/services",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\roman\\IdeaProjects\\shop\\shop-fe\\node_modules\\prettier",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "ts.external.directory.path": "C:\\Users\\roman\\IdeaProjects\\shop\\shop-fe\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ],
+    "RunConfigurationTargetLRU": [
+      "34e7884a-077f-44d2-9682-7c21819c5e6f/database/\"postgres\"/schema/\"public\""
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.productservice.exception" />
@@ -150,7 +177,13 @@
       <recent name="com.exemple.gatway.config" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="Database Script.V30__InitTables.sql">
+    <configuration name="V30__InitTables.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/basket/src/main/resources/db/migration/V30__InitTables.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="34e7884a-077f-44d2-9682-7c21819c5e6f" namespace="database/&quot;postgres&quot;/schema/&quot;public&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="All in eureka" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="eureka" />
       <option name="PACKAGE_NAME" value="" />
@@ -159,7 +192,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mail-activ.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/shop/auth/src/main/resources/static/mail-activ.html" useBuiltInWebServerPort="true">
+    <configuration name="basket [clean,compile]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="compile" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/basket" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="basket [clean,install]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/basket" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
       <method v="2" />
     </configuration>
     <configuration name="AuthApplication " type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
@@ -171,6 +263,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="basket" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.basket.BasketApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -218,9 +317,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.mail-activ.html" />
+      <item itemvalue="Database Script.V30__InitTables.sql" />
       <item itemvalue="JUnit.All in eureka" />
+      <item itemvalue="Maven.basket [clean,compile]" />
+      <item itemvalue="Maven.basket [clean,install]" />
       <item itemvalue="npm.start" />
+      <item itemvalue="Spring Boot.BasketApplication" />
       <item itemvalue="Spring Boot.FileServiceApplication" />
       <item itemvalue="Spring Boot.ProductServiceApplication" />
       <item itemvalue="Spring Boot.GatwayApplication" />
@@ -229,9 +331,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Database Script.V30__InitTables.sql" />
+        <item itemvalue="Maven.basket [clean,compile]" />
+        <item itemvalue="Maven.basket [clean,install]" />
         <item itemvalue="Spring Boot.AuthApplication " />
         <item itemvalue="JUnit.All in eureka" />
-        <item itemvalue="JavaScript Debug.mail-activ.html" />
       </list>
     </recent_temporary>
   </component>
@@ -259,7 +363,7 @@
       <workItem from="1712910262586" duration="76246000" />
       <workItem from="1713810069318" duration="4727000" />
       <workItem from="1714146501173" duration="35094000" />
-      <workItem from="1715235079024" duration="43918000" />
+      <workItem from="1715235079024" duration="54522000" />
     </task>
     <task id="LOCAL-00001" summary="shop v0.0.1 init">
       <option name="closed" value="true" />
@@ -637,7 +741,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715595879771</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="shop v0.4.4 FE_delProduct">
+      <option name="closed" value="true" />
+      <created>1715683199216</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1715683199216</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,8 +783,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="shop v0.1.01 Product_be" />
-    <MESSAGE value="shop v0.1.02 Rest_be" />
     <MESSAGE value="shop v0.1.03 pagin_be" />
     <MESSAGE value="shop v0.1.03 maper_be" />
     <MESSAGE value="shop v0.1.04 maper_be" />
@@ -696,7 +806,9 @@
     <MESSAGE value="shop v0.4.1 BE_errortoken" />
     <MESSAGE value="shop v0.4.2 FE_addProduct" />
     <MESSAGE value="shop v0.4.3 FE_addProduct" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop v0.4.3 FE_addProduct" />
+    <MESSAGE value="shop v0.4.4 FE_delProduct" />
+    <MESSAGE value="shop v0.5.4 BE_addProduct" />
+    <option name="LAST_COMMIT_MESSAGE" value="shop v0.5.4 BE_addProduct" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
