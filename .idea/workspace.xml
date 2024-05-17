@@ -4,40 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.5.4 BE_addProduct">
-      <change afterPath="$PROJECT_DIR$/basket/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/BasketApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/configuration/ApiGatewayEndpointConfigurationImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/controller/BasketController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/entity/Basket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/entity/BasketItemAddDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/entity/BasketItemDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/entity/BasketItems.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/entity/ListBasketItemDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/entity/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/entity/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/exceptions/BasketItemDontExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/exceptions/NoBasketInfoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/repository/BasketItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/repository/BasketRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/service/BasketService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/service/CookieService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/resources/db/migration/V30__InitTables.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/test/java/com/example/basket/BasketApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.5.5 BE_REST">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/BasketApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/BasketApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/controller/BasketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/controller/BasketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/service/BasketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/basket/src/main/java/com/example/basket/service/BasketService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -363,7 +334,7 @@
       <workItem from="1712910262586" duration="76246000" />
       <workItem from="1713810069318" duration="4727000" />
       <workItem from="1714146501173" duration="35094000" />
-      <workItem from="1715235079024" duration="54522000" />
+      <workItem from="1715235079024" duration="59219000" />
     </task>
     <task id="LOCAL-00001" summary="shop v0.0.1 init">
       <option name="closed" value="true" />
@@ -749,7 +720,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715683199216</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="shop v0.5.4 BE_addProduct">
+      <option name="closed" value="true" />
+      <created>1715857121349</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1715857121349</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -783,7 +762,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="shop v0.1.03 pagin_be" />
     <MESSAGE value="shop v0.1.03 maper_be" />
     <MESSAGE value="shop v0.1.04 maper_be" />
     <MESSAGE value="shop v0.1.04 category_be" />
@@ -808,7 +786,8 @@
     <MESSAGE value="shop v0.4.3 FE_addProduct" />
     <MESSAGE value="shop v0.4.4 FE_delProduct" />
     <MESSAGE value="shop v0.5.4 BE_addProduct" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop v0.5.4 BE_addProduct" />
+    <MESSAGE value="shop v0.5.5 BE_REST" />
+    <option name="LAST_COMMIT_MESSAGE" value="shop v0.5.5 BE_REST" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

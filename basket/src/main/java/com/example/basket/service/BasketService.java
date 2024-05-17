@@ -42,26 +42,29 @@ public class BasketService {
                 .findFirst().ifPresentOrElse(value -> {
                     basketRepository.findByUuid(value.getValue()).ifPresentOrElse(basket -> {
                         addProductToBasket(basket, basketItemAddDTO);
-                        Long sum = basketItemRepository.sumBasketItems(basket.getId());
-                        if (sum == null) sum = 0L;
-                        httpHeaders.add("X-Total-Count", String.valueOf(sum));
+                        headersAdd(basket, httpHeaders);
                     }, () -> {
-                        Basket basket = createBasket();
-                        response.addCookie(cookieService.generateCookie("basket", basket.getUuid()));
-                        addProductToBasket(basket, basketItemAddDTO);
-                        Long sum = basketItemRepository.sumBasketItems(basket.getId());
-                        if (sum == null) sum = 0L;
-                        httpHeaders.add("X-Total-Count", String.valueOf(sum));
+                        Basket basket = getBasket(basketItemAddDTO, response);
+                        headersAdd(basket, httpHeaders);
                     });
                 }, () -> {
-                    Basket basket = createBasket();
-                    response.addCookie(cookieService.generateCookie("basket", basket.getUuid()));
-                    addProductToBasket(basket, basketItemAddDTO);
-                    Long sum = basketItemRepository.sumBasketItems(basket.getId());
-                    if (sum == null) sum = 0L;
-                    httpHeaders.add("X-Total-Count", String.valueOf(sum));
+                    Basket basket = getBasket(basketItemAddDTO, response);
+                    headersAdd(basket, httpHeaders);
                 });
         return ResponseEntity.ok().headers(httpHeaders).body(new Response("Successful add item to basket"));
+    }
+
+    private Basket getBasket(BasketItemAddDTO basketItemAddDTO, HttpServletResponse response) {
+        Basket basket = createBasket();
+        response.addCookie(cookieService.generateCookie("basket", basket.getUuid()));
+        addProductToBasket(basket, basketItemAddDTO);
+        return basket;
+    }
+
+    private void headersAdd(Basket basket, HttpHeaders httpHeaders) {
+        Long sum = basketItemRepository.sumBasketItems(basket.getId());
+        if (sum == null) sum = 0L;
+        httpHeaders.add("X-Total-Count", String.valueOf(sum));
     }
 
 
@@ -111,9 +114,7 @@ public class BasketService {
                 .findFirst().ifPresentOrElse(value -> {
                     basketRepository.findByUuid(value.getValue()).ifPresentOrElse(basket -> {
                         deleteItem(uuid, basket);
-                        Long sum = basketItemRepository.sumBasketItems(basket.getId());
-                        if (sum == null) sum = 0L;
-                        httpHeaders.add("X-Total-Count", String.valueOf(sum));
+                        headersAdd(basket, httpHeaders);
                     }, () -> {
                         throw new NoBasketInfoException("Basket doesn't exist");
                     });
@@ -143,9 +144,7 @@ public class BasketService {
         cookies.stream().filter(value -> value.getName().equals("basket"))
                 .findFirst().ifPresentOrElse(value -> {
                     Basket basket = basketRepository.findByUuid(value.getValue()).orElseThrow(NoBasketInfoException::new);
-                    Long sum = basketItemRepository.sumBasketItems(basket.getId());
-                    if (sum == null) sum = 0L;
-                    httpHeaders.add("X-Total-Count", String.valueOf(sum));
+                    headersAdd(basket, httpHeaders);
                     basketItemRepository.findBasketItemsByBasket(basket).forEach(item -> {
                         try {
                             Product product = getProduct(item.getProduct());
