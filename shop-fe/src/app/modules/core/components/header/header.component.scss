@@ -1,6 +1,19 @@
-.dropdown:hover >.dropdown-menu{
+.dropdown:hover > .dropdown-menu {
   display: block;
 }
-.dropdown-item{
+
+.dropdown-item {
   cursor: pointer;
+}
+
+.display-initial {
+  display: initial;
+
+  .icon-height {
+    line-height: 30px;
+  }
+}
+.dropdown-menu-end{
+  right: 0;
+  left: auto;
 }

@@ -7,6 +7,10 @@
       <div class="text-center">
         <p class="product-name">{{ product.name }}</p>
         <p>{{ product.price | currency:'zl' }}</p>
+        <app-quantity-control [formControl]="quantityCoantrol"></app-quantity-control>
+        <div class="d-flex justify-content-center">
+          <button mat-raised-button color="primary" (click)="addToBasket()">Dodaj do koszyka</button>
+        </div>
         <p>Kup teraz!</p>
       </div>
     </div>
