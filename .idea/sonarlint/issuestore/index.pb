@@ -775,3 +775,5 @@ Ishop-fe/src/app/modules/basket/components/basket/basket.component.spec.ts,0\a\
 ]shop-fe/src/app/modules/basket/components/basket/basket-product/basket-product.component.scss,f\3\f34993f3c0e08963fd0ed024b3d4541e3da1d7f6
 _
 /shop-fe/src/app/modules/basket/basket.module.ts,d\9\d9b55e15397a2235815554f55be9699a8bd63503
+c
+3shop-fe/src/app/modules/core/models/basket.model.ts,c\2\c2c31b8714c218b149501e25c8eaebe1f618a547
