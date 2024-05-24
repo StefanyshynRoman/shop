@@ -5,6 +5,9 @@ import { switchMap } from 'rxjs';
 import { Product } from '../../../../core/models/product.model';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { FormControl } from '@angular/forms';
+import { BasketService } from '../../../../core/services/basket.service';
+import { PostBasketBody } from '../../../../core/models/basket.model';
+import { NotifierService } from 'angular-notifier';
 
 @Component({
   selector: 'app-product-details',
@@ -12,7 +15,7 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./product-details.component.scss'],
 })
 export class ProductDetailsComponent implements OnInit {
-  quantityCoantrol = new FormControl(1);
+  quantityControl = new FormControl(1);
   product: Product | null = null;
   parameters: { [key: string]: string } | null = null;
   htmlContent: null | SafeHtml = null;
@@ -20,6 +23,8 @@ export class ProductDetailsComponent implements OnInit {
     private route: ActivatedRoute,
     private productsService: ProductsService,
     private sanitizer: DomSanitizer,
+    private basketService: BasketService,
+    private notifierService: NotifierService,
   ) {}
 
   ngOnInit(): void {
@@ -46,6 +51,24 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   addToBasket() {
-    console.log(this.quantityCoantrol.value);
+    console.log(this.quantityControl.value);
+    const body: PostBasketBody = {
+      product: this.product!.uid,
+      quantity: Number(this.quantityControl.value),
+    };
+    this.basketService.addProductToBasket(body).subscribe({
+      next: () => {
+        this.notifierService.notify(
+          'success',
+          'Poprawnie dodano producty do koszyka',
+        );
+      },
+      error: () => {
+        this.notifierService.notify(
+          'warning',
+          'Nie udalo sie dodac productu do koszyka. Sprobuj ponownie',
+        );
+      },
+    });
   }
 }

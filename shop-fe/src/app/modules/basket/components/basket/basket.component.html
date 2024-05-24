@@ -1,1 +1,20 @@
-<p>basket works!</p>
+<div class="row" *ngIf="basketProducts.length===0">
+  <p>Aktualnie brak produktow w koszyku</p>
+</div>
+<div class="row" *ngIf="basketProducts.length>0">
+  <div class="col-md-9">
+    <div class="basket-product" *ngFor="let basketProduct of basketProducts">
+      <app-basket-product [basketProduct]="basketProduct"></app-basket-product>
+    </div>
+  </div>
+<div class="col-md-3">
+  <div class="summary-wrapper">
+    <h2 class="text-center summary-heading">Podsumowanie koszhyka:</h2>
+    <p class="text-center">Koszt bez dostawy:</p>
+    <p class="text-center">{{summaryPrice| currency:'zl'}}</p>
+    <div class="d-flex justify-content-center">
+      <button mat-raised-button color="primary">Przejdz do zakupu</button>
+    </div>
+  </div>
+</div>
+</div>

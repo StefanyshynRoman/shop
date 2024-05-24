@@ -1,0 +1,55 @@
+import { Injectable } from '@angular/core';
+import { environment } from '../../../../environments/environment';
+import { HttpClient, HttpResponse } from '@angular/common/http';
+import {
+  BasketResponse,
+  GetBasketResponse,
+  PostBasketBody,
+} from '../models/basket.model';
+import { BehaviorSubject, map, Observable, tap } from 'rxjs';
+import { ServerResponseModel } from '../models/server-response.model';
+
+function extractResponse(
+  response: HttpResponse<ServerResponseModel | GetBasketResponse>,
+): BasketResponse {
+  if (!response.body) return { body: null, totalCount: 0 };
+
+  const totalCount = Number(response.headers.get('X-Total-Count'));
+  return { body: { ...response.body }, totalCount };
+}
+
+@Injectable({
+  providedIn: 'root',
+})
+export class BasketService {
+  apiUrl = `${environment.apiUrl}/basket`;
+  totalCount$: BehaviorSubject<number> = new BehaviorSubject<number>(0);
+  constructor(private http: HttpClient) {}
+
+  getBasketProducts(): Observable<BasketResponse> {
+    return this.http
+      .get<GetBasketResponse>(`${this.apiUrl}`, {
+        withCredentials: true,
+        observe: 'response',
+      })
+      .pipe(
+        map(extractResponse),
+        tap(({ totalCount }) => {
+          this.totalCount$.next(totalCount);
+        }),
+      );
+  }
+  addProductToBasket(body: PostBasketBody): Observable<BasketResponse> {
+    return this.http
+      .post<ServerResponseModel>(`${this.apiUrl}`, body, {
+        withCredentials: true,
+        observe: 'response',
+      })
+      .pipe(
+        map(extractResponse),
+        tap(({ totalCount }) => {
+          this.totalCount$.next(totalCount);
+        }),
+      );
+  }
+}

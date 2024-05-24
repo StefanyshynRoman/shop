@@ -777,3 +777,9 @@ _
 /shop-fe/src/app/modules/basket/basket.module.ts,d\9\d9b55e15397a2235815554f55be9699a8bd63503
 c
 3shop-fe/src/app/modules/core/models/basket.model.ts,c\2\c2c31b8714c218b149501e25c8eaebe1f618a547
+l
+<shop-fe/src/app/modules/core/models/server-response.model.ts,8\7\87fed4995abc0c574600f0e3646451037f8c519a
+g
+7shop-fe/src/app/modules/core/services/basket.service.ts,a\7\a70a4b6b8374ee40e1cf65bce919117b34551a50
+l
+<shop-fe/src/app/modules/core/services/basket.service.spec.ts,3\d\3d24fa87d6eb7ae9a67c1bc770f16672596f2a5e

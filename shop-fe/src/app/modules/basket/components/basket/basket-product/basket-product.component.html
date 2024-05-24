@@ -1,1 +1,14 @@
-<p>basket-product works!</p>
+<div class="basket-product">
+  <div class="basket-product-img-wrapper">
+    <img [src]="basketProduct.imageUrl" [alt]="basketProduct.name" class="basket-product-img">
+  </div>
+  <div class="basket-product-name">
+    {{basketProduct.name}}
+  </div>
+  <div class="basket-product-prices">
+    <span>{{ basketProduct.price | currency:'zl' }}</span>
+    <span>x {{ basketProduct.quantity }}</span>
+    <span>{{ basketProduct.summaryPrice | currency:'zl' }}</span>
+    <mat-icon class="basket-product-icon" matTooltip="Usun product z koszyka">cancel</mat-icon>
+  </div>
+</div>
