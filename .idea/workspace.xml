@@ -4,27 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.6.7 FE_basket">
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/server-response.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/basket.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/basket.service.ts" afterDir="false" />
+    <list default="true" id="a35492e3-ef1c-4996-be0a-0b10d4824e2d" name="Changes" comment="shop v0.6.8 FE_add_basket">
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/components/create-order/create-order.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/components/create-order/create-order.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/components/create-order/create-order.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/components/create-order/create-order.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/addres.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/customer.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/delivery.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/order.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/basket-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/basket-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/basket.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/basket.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/components/basket/basket-product/basket-product.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/components/basket/basket-product/basket-product.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/components/basket/basket-product/basket-product.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/components/basket/basket-product/basket-product.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/components/basket/basket-product/basket-product.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/components/basket/basket-product/basket-product.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/components/basket/basket.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/components/basket/basket.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/components/basket/basket.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/components/basket/basket.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/components/basket/basket.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/basket/components/basket/basket.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/components/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/basket.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/basket.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/product-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/product-details.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/product-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/products/components/products/product-details/product-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/forms.models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/models/forms.models.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/basket.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-fe/src/app/modules/core/services/basket.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -360,15 +359,7 @@
       <workItem from="1713810069318" duration="4727000" />
       <workItem from="1714146501173" duration="35094000" />
       <workItem from="1715235079024" duration="61349000" />
-      <workItem from="1716119114962" duration="31028000" />
-    </task>
-    <task id="LOCAL-00006" summary="shop v0.0.5 auth_gat_way">
-      <option name="closed" value="true" />
-      <created>1711569391671</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1711569391671</updated>
+      <workItem from="1716119114962" duration="36761000" />
     </task>
     <task id="LOCAL-00007" summary="shop v0.0.5 auth_config">
       <option name="closed" value="true" />
@@ -754,7 +745,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716480420917</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="shop v0.6.8 FE_add_basket">
+      <option name="closed" value="true" />
+      <created>1716572858242</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1716572858242</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -788,7 +787,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="shop v0.2.01 ftp_be" />
     <MESSAGE value="shop v0.2.02 ftp_be" />
     <MESSAGE value="shop v0.2.02 image_product_be" />
     <MESSAGE value="shop v0.2.04 regis_be" />
@@ -813,7 +811,8 @@
     <MESSAGE value="shop v0.6.6 BE_PAy" />
     <MESSAGE value="shop v0.6.6 FE_direct" />
     <MESSAGE value="shop v0.6.7 FE_basket" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop v0.6.7 FE_basket" />
+    <MESSAGE value="shop v0.6.8 FE_add_basket" />
+    <option name="LAST_COMMIT_MESSAGE" value="shop v0.6.8 FE_add_basket" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

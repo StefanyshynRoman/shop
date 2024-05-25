@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../../../../environments/environment';
-import { HttpClient, HttpResponse } from '@angular/common/http';
+import { HttpClient, HttpParams, HttpResponse } from '@angular/common/http';
 import {
   BasketResponse,
   GetBasketResponse,
@@ -44,6 +44,21 @@ export class BasketService {
       .post<ServerResponseModel>(`${this.apiUrl}`, body, {
         withCredentials: true,
         observe: 'response',
+      })
+      .pipe(
+        map(extractResponse),
+        tap(({ totalCount }) => {
+          this.totalCount$.next(totalCount);
+        }),
+      );
+  }
+  deleteProductFromBasket(uuid: string): Observable<BasketResponse> {
+    const params = new HttpParams().append('uuid', uuid);
+    return this.http
+      .delete<ServerResponseModel>(`${this.apiUrl}`, {
+        withCredentials: true,
+        observe: 'response',
+        params,
       })
       .pipe(
         map(extractResponse),
