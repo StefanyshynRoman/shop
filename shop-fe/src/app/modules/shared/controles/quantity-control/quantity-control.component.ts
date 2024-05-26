@@ -23,6 +23,7 @@ export class QuantityControlComponent
 {
   quantityControl = new FormControl(1);
   sub = new Subscription();
+
   constructor() {
     this.sub.add(
       this.quantityControl.valueChanges.subscribe((value) => {
@@ -30,6 +31,7 @@ export class QuantityControlComponent
       }),
     );
   }
+
   onChange = (value: string | null) => {};
   onTouch = () => {};
   decrement() {
@@ -45,16 +47,19 @@ export class QuantityControlComponent
       this.quantityControl.setValue(currentValue + 1);
     }
   }
-  writeValue(value: string): void {
-    this.quantityControl.setValue(Number(value));
-  }
+
   registerOnChange(fn: () => void): void {
     this.onChange = fn;
   }
+
   registerOnTouched(fn: () => void): void {
     this.onTouch = fn;
   }
-  setDisabledState?(isDisabled: boolean): void {}
+
+  writeValue(value: number): void {
+    this.quantityControl.setValue(value);
+  }
+
   ngOnDestroy(): void {
     this.sub.unsubscribe();
   }
