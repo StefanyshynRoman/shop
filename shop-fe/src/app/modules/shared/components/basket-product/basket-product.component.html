@@ -10,6 +10,6 @@
     <span>x {{ basketProduct.quantity }}</span>
     <span>{{ basketProduct.summaryPrice | currency:'zl' }}</span>
     <mat-icon class="basket-product-icon" matTooltip="Usun product z koszyka"
-    (click)="deleteProductFromBasket()">cancel</mat-icon>
+              (click)="deleteProductFromBasket()" *ngIf="basketView">cancel</mat-icon>
   </div>
 </div>

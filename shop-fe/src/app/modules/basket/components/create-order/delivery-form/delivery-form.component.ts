@@ -1,10 +1,38 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormService } from '../../../../core/services/form.service';
+import { FormControl } from '@angular/forms';
+import { DeliveryService } from '../../../../core/services/delivery.service';
+import { GetDelivery } from '../../../../core/models/delivery.model';
 
 @Component({
   selector: 'app-delivery-form',
   templateUrl: './delivery-form.component.html',
-  styleUrls: ['./delivery-form.component.scss']
+  styleUrls: ['./delivery-form.component.scss'],
 })
-export class DeliveryFormComponent {
+export class DeliveryFormComponent implements OnInit {
+  deliveryForm = this.formService.initDeliveryForm();
+  deliveryTypes: GetDelivery[] = [];
+  errorMsg: string | null = null;
+  constructor(
+    private formService: FormService,
+    private deliveryService: DeliveryService,
+  ) {}
+  get controls() {
+    return this.deliveryForm.controls;
+  }
 
+  ngOnInit() {
+    this.deliveryService.getDelivery().subscribe({
+      next: (delivery) => {
+        this.deliveryTypes = [...delivery];
+      },
+      error: (err) => {
+        this.errorMsg = err;
+      },
+    });
+  }
+
+  // getErrorMessage(control: FormControl) {
+  //   return this.formService.getErrorMessage(control);
+  // }
 }
